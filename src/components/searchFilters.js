@@ -24,7 +24,7 @@ function SearchFilters(){
                 <div onClick={show_search_filter_by_services_list} style={{borderBottom: "1px solid rgba(255,255,0,0.2)", padding: 10, width: "calc(50% - 2px)"}}>
                     <i style={{marginRight: 5, color: "orange"}} className="fa fa-bars"></i>
                     <input readonly="true" type="text"  style={{cursor: "pointer", color: "white", background: "none", border: "none", width: "calc(100% - 37px)"}} value="Barber, More..." />
-                    <i id="show-services-filter-list-caret" style={{color: "crimson", marginLeft: 5}} className="fa fa-caret-down"></i>
+                    <i id="show-services-filter-list-caret" style={{color: "crimson", marginLeft: 5, transition: "400ms all ease-in-out 50ms"}} className="fa fa-caret-down"></i>
                 </div>
                 <div id="search-filter-by-services-list" style={{display: "none"}}>
                     <div className="search-filters-include-services">
