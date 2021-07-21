@@ -1,15 +1,21 @@
 function show_search_filter_by_services_list(){
     if(document.getElementById("search-filter-by-services-list").style.display === "block"){
+        setTimeout(()=>{
+            document.getElementById("show-services-filter-list-caret").style.transform = "rotate(0deg)";
+            document.getElementById("show-services-filter-list-caret").classList.remove("fa-times");
+            document.getElementById("show-services-filter-list-caret").classList.add("fa-caret-down");
+        }, 100);
+
         document.getElementById("search-filter-by-services-list").style.display = "none";
-        document.getElementById("show-services-filter-list-caret").style.transform = "rotate(0deg)";
-        document.getElementById("show-services-filter-list-caret").classList.remove("fa-times");
-        document.getElementById("show-services-filter-list-caret").classList.add("fa-caret-down");
     }
     else{
+        setTimeout(()=>{
+            document.getElementById("show-services-filter-list-caret").style.transform = "rotate(180deg)";
+            document.getElementById("show-services-filter-list-caret").classList.remove("fa-caret-down");
+            document.getElementById("show-services-filter-list-caret").classList.add("fa-times");   
+        }, 200);
+        
         document.getElementById("search-filter-by-services-list").style.display = "block";
-        document.getElementById("show-services-filter-list-caret").style.transform = "rotate(180deg)";
-        document.getElementById("show-services-filter-list-caret").classList.remove("fa-caret-down");
-        document.getElementById("show-services-filter-list-caret").classList.add("fa-times"); 
     }
 }
 
