@@ -54,29 +54,52 @@ function SearchResultsPage(){
                                             </div>
                                         </div>
                                     <div style={{marginTop: 20, overflow: "hidden", borderRadius: 4, borderTop: "4px solid #37a0f5", borderBottom: "4px solid #37a0f5", backgroundColor: "rgba(25,25,0,0.4)", boxShadow: "0px 1.6px 3.6px rgba(0, 0, 0, 0.5), 0px 0px 2.9px rgba(0, 0, 0, 0.5)"}}>
-                                    <div style={{display: "flex", flexDirection: "column", height: "100%"}}>
-                                        <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", height: "100%"}}>
-                                            <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic1+"')"}}>
+                                        <div style={{display: "flex", flexDirection: "column", height: "100%"}}>
+                                            <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", height: "100%"}}>
+                                                <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic1+"')"}}>
+                                                </div>
+                                                <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic2+"')"}}>
+                                                </div>
+                                                <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic3+"')"}}>
+                                                </div>
+                                                <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic4+"')"}}>
+                                                </div>
                                             </div>
-                                            <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic2+"')"}}>
-                                            </div>
-                                            <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic3+"')"}}>
-                                            </div>
-                                            <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic4+"')"}}>
-                                            </div>
-                                        </div>
-                                        <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", height: "100%", marginTop: 1}}>
-                                            <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic5+"')"}}>
-                                            </div>
-                                            <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic6+"')"}}>
-                                            </div>
-                                            <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic7+"')"}}>
-                                            </div>
-                                            <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic8+"')"}}>
+                                            <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", height: "100%", marginTop: 1}}>
+                                                <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic5+"')"}}>
+                                                </div>
+                                                <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic6+"')"}}>
+                                                </div>
+                                                <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic7+"')"}}>
+                                                </div>
+                                                <div style={{width: "calc(25% - 1px)", height: 80, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", backgroundImage: "url('"+glryPic8+"')"}}>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <div style={{marginTop: 20, borderTop: "1px solid rgba(255,255,255,0.2)", padding: "10px 0"}}>
+                                            <p style={{color: "white", fontSize: "15px"}}>
+                                                This place should contain the News Updates Message that the services providers add for the customers. It could 
+                                                be any update message regarding new services introduction, service changes or advertisements in general essence</p>
+                                            <div style={{display: "flex", flexDirection: "row", marginTop: 20}}>
+                                                <div style={{marginRight: 10}}>
+                                                    <div style={{width: 40, height: 40, borderRadius: "100%", overflow: "hidden", margin: "auto"}}>
+                                                        <img style={{width: "100%", height: "auto", minHeight: 40}} src={rvwImg}/>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <p style={{color: "orange", fontSize: 13, marginBottom: 5, fontWeight: "bolder"}}>Chris Amoah</p>
+                                                    <div style={{display: "flex"}}>
+                                                        <div style={{marginRight: 5}}>
+                                                            <p style={{fontSize: 39, fontFamily: 'Courgette', color: "orange"}}>"</p>
+                                                        </div>
+                                                        <p style={{color: "rgb(181,255,185)", fontSize: "14px", marginTop: 12}}>
+                                                            Review message from Mr. Chris should be placed here so that other customers can see this service providers reputation
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                 </div>
                                 <div className="each-search-result-spots-section">
                                     <div style={{padding: 10,}}>
@@ -86,7 +109,7 @@ function SearchResultsPage(){
                                             <i style={{marginLeft: 10, color: "orange"}} class="fa fa-caret-down"></i>
                                         </div>
                                         <div style={{display: "flex", flexWrap: "wrap"}}>
-                                            <div style={{marginRight: 5, marginBottom: 5, textAlign: "center", padding: 10, width: "fit-content", backgroundColor: "rgba(55,255,23, 0.2)", border: "1px solid rgb(55,255,23, 0.4)", borderRadius: 4, color: "rgba(55,255,23, 0.8)", cursor: "pointer"}}>
+                                            <div className="search-results-each-time-spot" style={{backgroundColor: "rgba(55,255,23, 0.2)", border: "1px solid rgb(55,255,23, 0.4)", borderRadius: 4, color: "rgba(55,255,23, 0.8)", cursor: "pointer"}}>
                                                 3:40 PM
                                                 <p style={{marginTop: 5, color: "white", fontSize: 13}}>
                                                     <i style={{color: "rgb(21,121,223)", marginRight: 5}} className="fa fa-check"></i>
@@ -96,7 +119,7 @@ function SearchResultsPage(){
                                                     13 slots left
                                                 </p>
                                             </div>
-                                            <div style={{marginRight: 5, marginBottom: 5, textAlign: "center", padding: 10, width: "fit-content", backgroundColor: "rgba(55,23,255, 0.2)", border: "1px solid rgb(55,23,255, 0.4)", borderRadius: 4, color: "rgba(55,23,255, 0.9)", cursor: "pointer"}}>
+                                            <div className="search-results-each-time-spot" style={{backgroundColor: "rgba(55,23,255, 0.2)", border: "1px solid rgb(55,23,255, 0.4)", borderRadius: 4, color: "rgb(155,23,255)", cursor: "pointer"}}>
                                                 3:40 PM
                                                 <p style={{marginTop: 5, color: "white", fontSize: 13}}>
                                                     <i style={{color: "rgb(21,223,221)", marginRight: 5}} className="fa fa-info-circle"></i>
@@ -106,7 +129,7 @@ function SearchResultsPage(){
                                                     7 slots left
                                                 </p>
                                             </div>
-                                            <div style={{marginRight: 5, marginBottom: 5, textAlign: "center", padding: 10, width: "fit-content", backgroundColor: "rgba(255,55,23, 0.2)", border: "1px solid rgb(255,55,23, 0.4)", borderRadius: 4, color: "rgba(255,55,23, 0.8)", cursor: "pointer"}}>
+                                            <div className="search-results-each-time-spot" style={{backgroundColor: "rgba(255,55,23, 0.2)", border: "1px solid rgb(255,55,23, 0.4)", borderRadius: 4, color: "rgba(255,55,23, 0.8)", cursor: "pointer"}}>
                                                 3:40 PM
                                                 <p style={{marginTop: 5, color: "white", fontSize: 13}}>
                                                     <i style={{color: "orange", marginRight: 5}} className="fa fa-exclamation-triangle"></i>
@@ -116,7 +139,7 @@ function SearchResultsPage(){
                                                     4 slots left
                                                 </p>
                                             </div>
-                                            <div style={{marginRight: 5, marginBottom: 5, textAlign: "center", padding: 10, width: "fit-content", backgroundColor: "rgba(255,55,23, 0.2)", border: "1px solid rgb(255,55,23, 0.4)", borderRadius: 4, color: "rgba(255,55,23, 0.8)", cursor: "pointer"}}>
+                                            <div className="search-results-each-time-spot" style={{backgroundColor: "rgba(255,55,23, 0.2)", border: "1px solid rgb(255,55,23, 0.4)", borderRadius: 4, color: "rgba(255,55,23, 0.8)", cursor: "pointer"}}>
                                                 3:40 PM
                                                 <p style={{marginTop: 5, color: "white", fontSize: 13}}>
                                                     <i style={{color: "orange", marginRight: 5}} className="fa fa-exclamation-triangle"></i>
@@ -126,7 +149,7 @@ function SearchResultsPage(){
                                                     3 slots left
                                                 </p>
                                             </div>
-                                            <div style={{marginRight: 5, marginBottom: 5, textAlign: "center", padding: 10, width: "fit-content", backgroundColor: "rgba(255,55,23, 0.2)", border: "1px solid rgb(255,55,23, 0.4)", borderRadius: 4, color: "rgba(255,55,23, 0.8)", cursor: "pointer"}}>
+                                            <div className="search-results-each-time-spot" style={{backgroundColor: "rgba(255,55,23, 0.2)", border: "1px solid rgb(255,55,23, 0.4)", borderRadius: 4, color: "rgba(255,55,23, 0.8)", cursor: "pointer"}}>
                                                 3:40 PM
                                                 <p style={{marginTop: 5, color: "white", fontSize: 13}}>
                                                     <i style={{color: "orange", marginRight: 5}} className="fa fa-exclamation-triangle"></i>
@@ -136,7 +159,7 @@ function SearchResultsPage(){
                                                     1 slot left
                                                 </p>
                                             </div>
-                                            <div style={{marginRight: 5, marginBottom: 5, textAlign: "center", padding: 10, width: "fit-content", backgroundColor: "rgba(255,55,23, 0.2)", border: "1px solid rgb(255,55,23, 0.4)", borderRadius: 4, color: "rgba(255,55,23, 0.8)", cursor: "pointer"}}>
+                                            <div className="search-results-each-time-spot" style={{backgroundColor: "rgba(255,55,23, 0.2)", border: "1px solid rgb(255,55,23, 0.4)", borderRadius: 4, color: "rgba(255,55,23, 0.8)", cursor: "pointer"}}>
                                                 3:40 PM
                                                 <p style={{marginTop: 5, color: "white", fontSize: 13}}>
                                                     <i style={{color: "orange", marginRight: 5}} className="fa fa-exclamation-triangle"></i>
@@ -146,7 +169,7 @@ function SearchResultsPage(){
                                                     2 slots left
                                                 </p>
                                             </div>
-                                            <div style={{marginRight: 5, marginBottom: 5, textAlign: "center", padding: 10, width: "fit-content", backgroundColor: "rgba(255,55,23, 0.2)", border: "1px solid rgb(255,55,23, 0.4)", borderRadius: 4, color: "rgba(255,55,23, 0.8)", cursor: "pointer"}}>
+                                            <div className="search-results-each-time-spot" style={{backgroundColor: "rgba(255,55,23, 0.2)", border: "1px solid rgb(255,55,23, 0.4)", borderRadius: 4, color: "rgba(255,55,23, 0.8)", cursor: "pointer"}}>
                                                 3:40 PM
                                                 <p style={{marginTop: 5, color: "white", fontSize: 13}}>
                                                     <i style={{color: "orange", marginRight: 5}} className="fa fa-exclamation-triangle"></i>
@@ -156,7 +179,7 @@ function SearchResultsPage(){
                                                     2 slots left
                                                 </p>
                                             </div>
-                                            <div style={{marginRight: 5, marginBottom: 5, textAlign: "center", padding: 10, width: "fit-content", backgroundColor: "rgba(55,255,23, 0.2)", border: "1px solid rgb(55,255,23, 0.4)", borderRadius: 4, color: "rgba(55,255,23, 0.8)", cursor: "pointer"}}>
+                                            <div className="search-results-each-time-spot" style={{backgroundColor: "rgba(55,255,23, 0.2)", border: "1px solid rgb(55,255,23, 0.4)", borderRadius: 4, color: "rgba(55,255,23, 0.8)", cursor: "pointer"}}>
                                                 3:40 PM
                                                 <p style={{marginTop: 5, color: "white", fontSize: 13}}>
                                                     <i style={{color: "rgb(21,121,223)", marginRight: 5}} className="fa fa-check"></i>
@@ -166,7 +189,7 @@ function SearchResultsPage(){
                                                     10 slots left
                                                 </p>
                                             </div>
-                                            <div style={{marginRight: 5, marginBottom: 5, textAlign: "center", padding: 10, width: "fit-content", backgroundColor: "rgba(55,23,255, 0.2)", border: "1px solid rgb(55,23,255, 0.4)", borderRadius: 4, color: "rgba(55,23,255, 0.9)", cursor: "pointer"}}>
+                                            <div className="search-results-each-time-spot" style={{backgroundColor: "rgba(55,23,255, 0.2)", border: "1px solid rgb(55,23,255, 0.4)", borderRadius: 4, color: "rgb(155,23,255)", cursor: "pointer"}}>
                                                 3:40 PM
                                                 <p style={{marginTop: 5, color: "white", fontSize: 13}}>
                                                     <i style={{color: "rgb(21,223,221)", marginRight: 5}} className="fa fa-info-circle"></i>
@@ -185,29 +208,7 @@ function SearchResultsPage(){
                                                 50% More
                                             </p>
                                         </div>
-                                        <div style={{marginTop: 20, borderTop: "1px solid rgba(255,255,255,0.2)", padding: "10px 0"}}>
-                                        <p style={{color: "white", fontSize: "15px"}}>
-                                            This place should contain the News Updates Message that the services providers add for the customers. It could 
-                                            be any update message regarding new services introduction, service changes or advertisements in general essence</p>
-                                        <div style={{display: "flex", flexDirection: "row", marginTop: 20}}>
-                                            <div style={{marginRight: 10}}>
-                                                <div style={{width: 40, height: 40, borderRadius: "100%", overflow: "hidden", margin: "auto"}}>
-                                                    <img style={{width: "100%", height: "auto", minHeight: 40}} src={rvwImg}/>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <p style={{color: "orange", fontSize: 13, marginBottom: 5, fontWeight: "bolder"}}>Chris Amoah</p>
-                                                <div style={{display: "flex"}}>
-                                                    <div style={{marginRight: 5}}>
-                                                        <p style={{fontSize: 39, fontFamily: 'Courgette', color: "orange"}}>"</p>
-                                                    </div>
-                                                    <p style={{color: "rgb(181,255,185)", fontSize: "14px", marginTop: 12}}>
-                                                        Review message from Mr. Chris should be placed here so that other customers can see this service providers reputation
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        
                                     </div>
                                 </div>
                             </div>
