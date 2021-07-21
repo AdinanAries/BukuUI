@@ -1,9 +1,9 @@
 /* for the lazy */
 @import url(https://fonts.googleapis.com/css?family=Sanchez);
 
-*,
-*::before,
-*::after {
+.search-filter-by-service-each-service-toggle *,
+.search-filter-by-service-each-service-toggle *::before,
+.search-filter-by-service-each-service-toggle *::after {
   transition: 400ms all ease-in-out 50ms;
   box-sizing: border-box;
   backface-visibility: hidden;
