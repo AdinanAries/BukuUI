@@ -7,16 +7,12 @@ import hairDryerIcon from '../images/hair-dryer.png';
 import favsProPIc from '../images/ProfilePic17.png';
 
 import AboutBuku from './aboutBukuSection';
-import SearchFilters from './searchFilters';
 
 function Hero(){
     return (
         <section className="hero-section">
             <div className="hero-section-inner">
                 <div className="wrapper">
-                    <div>
-                        <SearchFilters />
-                    </div>
                     <h1 className="section-title" style={{marginBottom: "10px"}}>Popular Services</h1>
                     <div id="popular-services-section">
                         <a href="">

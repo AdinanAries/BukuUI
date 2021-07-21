@@ -1,4 +1,5 @@
 import HeaderSearchBox from "./headerSearchBox";
+import SearchFilters from './searchFilters';
 
 function Header(){
     return (
@@ -24,6 +25,9 @@ function Header(){
                         <p style={{fontSize: "11px", color: "white"}}>News</p>
                     </div>
                 </div>
+            </div>
+            <div>
+                <SearchFilters />
             </div>
         </header>
     );
