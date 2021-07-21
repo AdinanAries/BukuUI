@@ -1,0 +1,106 @@
+/* for the lazy */
+@import url(https://fonts.googleapis.com/css?family=Sanchez);
+
+*,
+*::before,
+*::after {
+  transition: 400ms all ease-in-out 50ms;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+
+
+
+/*html,body{ text-align: center; font-family: 'Sanchez', serif;}*/
+
+.search-filter-by-service-each-service-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.search-filter-by-service-each-service-toggle a{
+    color: rgba(43,43,43,1); text-decoration: none; padding: 10px; border-bottom: 2px solid rgba(43,43,43,1); }
+
+.search-filter-by-service-each-service-toggle a:hover{ background: rgba(43,43,43,1); color: rgba(255,255,255,1); }
+
+
+/*Button is :CHECKED*/
+
+.search-filter-by-service-each-service-toggle input[type="checkbox"]:checked ~ div {
+  background: rgba(73,168,68,1);
+  box-shadow: 0 0 2px rgba(73,168,68,1);
+}
+
+.search-filter-by-service-each-service-toggle input[type="checkbox"]:checked ~ div label {
+  left: 22px;
+  transform: rotate(360deg);
+}
+
+
+/*shared*/
+
+.search-filter-by-service-each-service-toggle div,
+.search-filter-by-service-each-service-toggle label {
+  border-radius: 50px;
+}
+
+
+/*'un':checked state*/
+
+.search-filter-by-service-each-service-toggle div {
+  height: 20px;
+  width: 40px;
+  background: rgba(43, 43, 43, 1);
+  position: relative;
+  box-shadow: 0 0 2px rgba(43,43,43,1);
+}
+
+.search-filter-by-service-each-service-toggle label {
+  height: 15px;
+  width: 15px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  cursor: pointer;
+}
+
+.search-filter-by-service-each-service-toggle label::before {
+  content: '';
+  height: 12px;
+  width: 2px;
+  position: absolute;
+  top: 1px;
+  left: calc(50% - 1.5px);
+  transform: rotate(45deg);
+}
+
+.search-filter-by-service-each-service-toggle label::after {
+  content: '';
+  height: 2px;
+  width: 12px;
+  position: absolute;
+  top: calc(50% - 1.5px);
+  left: 1px;
+  transform: rotate(45deg);
+}
+
+.search-filter-by-service-each-service-toggle label::before,
+.search-filter-by-service-each-service-toggle label::after{
+  background: rgba(43,43,43,1);
+  border-radius: 5px;
+}
+
+/* pesduo class on toggle */
+
+.search-filter-by-service-each-service-toggle input[type="checkbox"]:checked ~ div label::before{
+  height: 12px;
+  top: 3px;
+  left: calc(60% - 0.5px);
+  background: rgba(73,168,68,1);
+}
+.search-filter-by-service-each-service-toggle input[type="checkbox"]:checked ~ div label::after{
+  width: 7px;
+  top: 10px;
+  left: calc(22.5% - 2.5px);
+  background: rgba(73,168,68,1);
+}

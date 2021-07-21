@@ -81,7 +81,7 @@ function Hero(){
                                 </div>
                                 <p className="homepage-each-favorite-service-bizname ">Bukus Meds</p>
                                 <p className="homepage-each-favorite-service-servicetype">- Medical Center -</p>
-                                <p style={{textAlign: "center", color: "lightgreen"}}>
+                                <p style={{textAlign: "center", color: "lightgreen", fontSize: 14, marginTop: 10}}>
                                     <i style={{marginRight: 5, color: "orange"}} className="fa fa-map-marker"></i>
                                     1253 allerton ave</p>
                             </div>
@@ -107,7 +107,7 @@ function Hero(){
                                 </div>
                                 <p className="homepage-each-favorite-service-bizname ">Bukus Meds</p>
                                 <p className="homepage-each-favorite-service-servicetype">- Medical Center -</p>
-                                <p style={{textAlign: "center", color: "lightgreen"}}>
+                                <p style={{textAlign: "center", color: "lightgreen", fontSize: 14, marginTop: 10}}>
                                     <i style={{marginRight: 5, color: "orange"}} className="fa fa-map-marker"></i>
                                     1253 allerton ave</p>
                             </div>
@@ -133,7 +133,7 @@ function Hero(){
                                 </div>
                                 <p className="homepage-each-favorite-service-bizname ">Bukus Meds</p>
                                 <p className="homepage-each-favorite-service-servicetype">- Medical Center -</p>
-                                <p style={{textAlign: "center", color: "lightgreen"}}>
+                                <p style={{textAlign: "center", color: "lightgreen", fontSize: 14, marginTop: 10}}>
                                     <i style={{marginRight: 5, color: "orange"}} className="fa fa-map-marker"></i>
                                     1253 allerton ave</p>
                             </div>
@@ -159,7 +159,7 @@ function Hero(){
                                 </div>
                                 <p className="homepage-each-favorite-service-bizname ">Bukus Meds</p>
                                 <p className="homepage-each-favorite-service-servicetype">- Medical Center -</p>
-                                <p style={{textAlign: "center", color: "lightgreen"}}>
+                                <p style={{textAlign: "center", color: "lightgreen", fontSize: 14, marginTop: 10}}>
                                     <i style={{marginRight: 5, color: "orange"}} className="fa fa-map-marker"></i>
                                     1253 allerton ave</p>
                             </div>
