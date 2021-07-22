@@ -11,9 +11,9 @@ function Header(){
     return (
         <><header className="App-header">
             <div className="header-wrapper">
-                <div className="each-header-section">
+                <Link to="/"><div onClick={refreshPageFunc} className="each-header-section">
                     <p className="logo">Buk-<span className="logosB">U</span><span className="logos-dotcom">.com</span></p>
-                </div>
+                </div></Link>
                 <div className="each-header-section header-search-section">
                     <HeaderSearchBox />
                 </div>
