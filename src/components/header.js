@@ -1,9 +1,15 @@
+import { Link } from 'react-router-dom';
+
 import HeaderSearchBox from "./headerSearchBox";
 import SearchFilters from './searchFilters';
 
+function refreshPageFunc(){
+    setTimeout("location.reload(true);", 0);
+}
+
 function Header(){
     return (
-        <header className="App-header">
+        <><header className="App-header">
             <div className="header-wrapper">
                 <div className="each-header-section">
                     <p className="logo">Buk-<span className="logosB">U</span><span className="logos-dotcom">.com</span></p>
@@ -13,7 +19,9 @@ function Header(){
                 </div>
                 <div className="each-header-section header-main-nav">
                     <ul>
-                        <li className="active"><i className="fa fa-home"></i>Home</li>
+                        <li onClick={refreshPageFunc} className="active">
+                            <Link to="/" style={{color: "white"}}><i className="fa fa-home"></i>Home</Link>
+                        </li>
                         <li><i className="fa fa-bars"></i>Services</li>
                         <li><i className="fa fa-calendar-o"></i>Appointments</li>
                         <li><i className="fa fa-sign-in"></i>Login</li>
@@ -29,7 +37,7 @@ function Header(){
             <div>
                 <SearchFilters />
             </div>
-        </header>
+        </header></>
     );
 }
 

@@ -1,3 +1,5 @@
+import { Route, BrowserRouter as Router } from 'react-router-dom';
+
 import './App.css';
 import Header from './components/header';
 import Main from "./components/main";
@@ -7,10 +9,12 @@ import SearchResultsPage from './components/searchResults';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <SearchResultsPage />
-      <Footer />
+      <Router>
+        <Header />
+        <Route exact path="/" component={ Main } />
+        <Route exact path="/search" component={ SearchResultsPage } />
+        <Footer />
+      </Router>
     </div>
   );
 }
