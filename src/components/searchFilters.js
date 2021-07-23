@@ -23,7 +23,7 @@ function SearchFilters(){
     return (
         <section>
             <div style={{display: "flex", flexDirection: "row !important", justifyContent: "space-between", maxWidth: 700, padding: "0 10px", margin: "auto", marginTop: 5, position: "relative"}}>
-                <div style={{borderBottom: "1px solid rgba(255,255,0,0.2)", padding: 10, width: "calc(50% - 2px)"}}>
+                <div style={{borderBottom: "1px solid rgba(255,255,0,0.2)", padding: "10px 0", width: "calc(50% - 2px)"}}>
                     <i style={{marginRight: 5, color: "orange"}} className="fa fa-map-marker"></i>
                     <input type="text"  style={{color: "white", background: "none", border: "none", width: "calc(100% - 15px)"}} value="Bronx, NY, USA 1123" />
                 </div>
@@ -147,6 +147,10 @@ function SearchFilters(){
                                 <label for="filter-makeup-checkbox">Makeup Artist
                                     <span style={{backgroundColor: "green", fontSize: 12, color: "white", padding: 3, marginLeft: 5, borderRadius: 4}}>new</span>
                                 </label>
+                            </div>
+                            <div style={{cursor: "pointer", textAlign: "center", fontWeight: "bolder", fontSize: 14,padding: 10, backgroundColor: "green", color: "white", marginTop: 10, borderRadius: 10}}>
+                                <i style={{marginRight: 5, color: "orange"}} className="fa fa-search" aria-hidden="true"></i>
+                                Search
                             </div>
                         </div>
                     </div>

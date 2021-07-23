@@ -200,16 +200,187 @@ function SearchResultsPage(){
                                                 </p>
                                             </div>
                                         </div>
-                                        <div style={{marginRight: 5, marginTop: 5, textAlign: "center", padding: 10, border: "1px solid rgb(155,23,255, 0.4)", backgroundColor: "rgba(155,23,255, 0.2)", borderRadius: 4, color: "goldenrod", cursor: "pointer"}}>
-                                            <i style={{color: "rgb(21,223,221)", marginRight: 5}} className="fa fa-plus"></i>
-                                            custom time
+                                        <div style={{marginRight: 5, marginTop: 5, textAlign: "center", padding: 10, border: "1px solid rgb(155,23,255, 0.4)", fontSize: 14, backgroundColor: "rgba(155,23,255, 0.2)", borderRadius: 4, color: "goldenrod", cursor: "pointer"}}>
+                                            <i style={{color: "rgb(21,223,221)", marginRight: 5}} className="fa fa-arrow-down"></i>
+                                            choose your own time below
                                             <p style={{marginTop: 5, color: "white", fontSize: 13}}>
                                             <i style={{color: "orange", marginRight: 5}} className="fa fa-exclamation-triangle"></i>
                                                 50% More
                                             </p>
                                         </div>
-                                        
+                                        <div>
+                                            <div style={{padding: 10, borderTopLeftRadius: 4, borderTopRightRadius: 4, backgroundColor: 'slateblue', marginTop: 10}}>
+                                                <p style={{color: "white", textAlign: "center", fontSize: 14}}>Select your time below</p>
+                                                <div style={{marginTop: 10, display: "flex", flexDirection: "row !import", justifyContent: "space-between"}}>
+                                                    <select style={{padding: 10, width: "33%"}}>
+                                                        <option>HH</option>
+                                                    </select>
+                                                    <select style={{padding: 10, width: "33%"}}>
+                                                        <option>MM</option>
+                                                    </select>
+                                                    <select style={{padding: 10, width: "33%"}}>
+                                                        <option>
+                                                            AM
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div style={{display: "flex", flexDirection: "row !important", justifyContent: "space-between", marginTop: 2, borderBottomLeftRadius: 4, borderBottomRightRadius: 4, overflow: "hidden"}}>
+                                                <div style={{cursor: "pointer", width: "calc(50% - 1px)", padding: "10px", textAlign: "center", backgroundColor: "orange", color: "green", fontWeight: "bolder", fontSize: 14}}>
+                                                    Done
+                                                </div>
+                                                <div style={{cursor: "pointer", width: "calc(50% - 1px)", padding: "10px", textAlign: "center", backgroundColor: "crimson", color: "white", fontSize: 14}}>
+                                                    <i style={{color: "rgb(201,193,221)", marginRight: 10}} className="fa fa-link"></i>
+                                                    view business page
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div style={{padding: 10}}>
+                                        <p style={{color: "white", width: "fit-content", cursor: "pointer", padding: 10}}>
+                                            <i style={{color: "rgb(201,193,221)", marginRight: 10}} className="fa fa-arrow-left"></i>
+                                            Go Back</p>
+                                        <div>
+                                            <p style={{color: "orange", textAlign: "center", fontWeight: "bolder", marginBottom: 20}}>Select a service below</p>
+                                            <div>
+                                                <div style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                    <div style={{padding: 10, width: "calc(100% - 70px)"}}>
+                                                        <p>
+                                                            <span style={{fontSize: 14, color: "lightgreen", marginRight: 10}}>General Medical Checkup</span>
+                                                            <span style={{fontSize: 13, marginRight: 10, color: "orange"}}>
+                                                                $12.99
+                                                            </span>
+                                                        </p>
+                                                        <p style={{marginTop: 2}}>
+                                                            <span style={{fontSize: 13, marginRight: 10, color: "yellow"}}>
+                                                                this is where to put service descriptions for each searvice. More can be added to this in order to make the description more 
+                                                                informative
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                        Choose
+                                                    </div>
+                                                </div>
+                                                <div style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                    <div style={{padding: 10, width: "calc(100% - 70px)"}}>
+                                                        <p>
+                                                            <span style={{fontSize: 14, color: "lightgreen", marginRight: 10}}>General Medical Checkup</span>
+                                                            <span style={{fontSize: 13, marginRight: 10, color: "orange"}}>
+                                                                $12.99
+                                                            </span>
+                                                        </p>
+                                                        <p style={{marginTop: 2}}>
+                                                            <span style={{fontSize: 13, marginRight: 10, color: "yellow"}}>
+                                                                this is where to put service descriptions for each searvice. More can be added to this in order to make the description more 
+                                                                informative
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                        Choose
+                                                    </div>
+                                                </div>
+                                                
+                                                <div style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                    <div style={{padding: 10, width: "calc(100% - 70px)"}}>
+                                                        <p>
+                                                            <span style={{fontSize: 14, color: "lightgreen", marginRight: 10}}>General Medical Checkup</span>
+                                                            <span style={{fontSize: 13, marginRight: 10, color: "orange"}}>
+                                                                $12.99
+                                                            </span>
+                                                        </p>
+                                                        <p style={{marginTop: 2}}>
+                                                            <span style={{fontSize: 13, marginRight: 10, color: "yellow"}}>
+                                                                this is where to put service descriptions for each searvice. More can be added to this in order to make the description more 
+                                                                informative
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                        Choose
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style={{padding: 10}}>
+                                        <p style={{color: "white", width: "fit-content", cursor: "pointer", padding: 10}}>
+                                            <i style={{color: "rgb(201,193,221)", marginRight: 10}} className="fa fa-arrow-left"></i>
+                                            Go Back</p>
+                                        <div>
+                                            <p style={{color: "orange", textAlign: "center", fontWeight: "bolder", marginBottom: 20}}>Select User Option
+                                            </p>
+                                            <div>
+                                                <div style={{borderLeft: "4px solid skyblue", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                    <div style={{padding: 10, width: "calc(100% - 70px)"}}>
+                                                        <p>
+                                                            <span style={{fontSize: 14, color: "skyblue", marginRight: 10}}>Login</span>
+                                                            <i style={{color: "lightgreen"}} class="fa fa-sign-in"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "darkslateblue", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                        Choose
+                                                    </div>
+                                                </div>
+                                                <div style={{borderLeft: "4px solid slateblue", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                    <div style={{padding: 10, width: "calc(100% - 70px)"}}>
+                                                        <p>
+                                                            <span style={{fontSize: 14, color: "slateblue", marginRight: 10}}>Signup</span>
+                                                            <i style={{color: "pink"}} class="fa fa-user-plus"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "green", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                        Choose
+                                                    </div>
+                                                </div>
+                                                <div style={{borderLeft: "4px solid goldenrod", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                    <div style={{padding: 10, width: "calc(100% - 70px)"}}>
+                                                        <p>
+                                                            <span style={{fontSize: 14, color: "goldenrod", marginRight: 10}}>Book Without Account</span>
+                                                            <i style={{color: "yellow"}} class="fa fa-user"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                        Choose
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style={{padding: 10}}>
+                                        <p style={{color: "white", width: "fit-content", cursor: "pointer", padding: 10}}>
+                                            <i style={{color: "rgb(201,193,221)", marginRight: 10}} className="fa fa-arrow-left"></i>
+                                            Go Back</p>
+                                        <div>
+                                            <p style={{color: "orange", textAlign: "center", fontWeight: "bolder", marginBottom: 20}}>Select Payment</p>
+                                            <div>
+                                                <div style={{borderLeft: "4px solid goldenrod", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                    <div style={{padding: 10, width: "calc(100% - 70px)"}}>
+                                                        <p>
+                                                            <span style={{fontSize: 14, color: "goldenrod", marginRight: 10}}>Pay Now</span>
+                                                            <i style={{color: "yellow"}} class="fa fa-credit-card"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                        Choose
+                                                    </div>
+                                                </div>
+                                                <div style={{borderLeft: "4px solid skyblue", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                    <div style={{padding: 10, width: "calc(100% - 70px)"}}>
+                                                        <p>
+                                                            <span style={{fontSize: 14, color: "skyblue", marginRight: 10}}>Pay at Counter</span>
+                                                            <i style={{color: "lightgreen"}} class="fa fa-money"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "darkslateblue", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                        Choose
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                             

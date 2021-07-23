@@ -13,7 +13,7 @@ function Hero(){
         <section className="hero-section">
             <div className="hero-section-inner">
                 <div className="wrapper">
-                    <h1 className="section-title" style={{marginBottom: "10px"}}>Popular Services</h1>
+                    <h1 className="section-title" style={{marginBottom: "10px", marginTop: 10}}>Popular Services</h1>
                     <div id="popular-services-section">
                         <a href="">
                             <div className="each-popular-service">
