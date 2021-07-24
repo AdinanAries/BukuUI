@@ -145,7 +145,7 @@ function SearchResultsPage(){
                                             </div>
                                         </div>
                                 </div>
-                                <div className="each-search-result-spots-section" style={{padding: 10}}>
+                                <div className="each-search-result-spots-section" style={{padding: 5, paddingBottom: 0}}>
                                     <div>
                                         <div style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
                                             <div style={{padding: 10, width: "calc(100% - 70px)"}}>
@@ -245,7 +245,7 @@ function SearchResultsPage(){
                                             </div>
                                         </div>
                                 </div>
-                                <div className="each-search-result-spots-section" style={{padding: 10}}>
+                                <div className="each-search-result-spots-section" style={{padding: 5, paddingBottom: 0}}>
                                     <div>
                                         <div style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
                                             <div style={{padding: 10, width: "calc(100% - 70px)"}}>
