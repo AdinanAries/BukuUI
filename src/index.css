@@ -281,9 +281,10 @@ footer {
   text-align: center;
 }
 .search-results-page {
-  padding-top: 110px;
+  padding-top: 100px;
   padding-bottom: 30px;
   background-color: #212c2c;
+  min-height: calc(100vh - 200px);
 }
 .register-business-section-content {
   display: flex;
@@ -429,7 +430,7 @@ footer {
   margin-bottom: 5px;
   overflow: hidden;
   display: flex;
-  border-left: 10px solid #ffe96b;
+  border-left: 7px solid #ffe96b;
 }
 .search-results-list-each-item-left-section{
   margin-right: 10px;
