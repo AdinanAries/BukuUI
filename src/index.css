@@ -569,6 +569,14 @@ footer {
   .search-results-each-time-spot{
     width: calc(50% - 5px);
   }
+  #booking_workflow_main_container{
+    position: fixed;
+    background-color: #212c2c;
+    top: 90px;
+    overflow-y: auto;
+    height: calc(100vh - 90px);
+    width: 100%;
+  }
   .footer-items-container {
     display: block;
   }
