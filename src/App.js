@@ -5,6 +5,8 @@ import Header from './components/header';
 import Main from "./components/main";
 import Footer from "./components/footer";
 import SearchResultsPage from './components/searchResults';
+import MobileBottomNav from './components/mobileBottomNav';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route exact path="/" component={ Main } />
         <Route exact path="/search" component={ SearchResultsPage } />
         <Footer />
+        <MobileBottomNav />
       </Router>
     </div>
   );

@@ -4,7 +4,14 @@ window.onpopstate=function(){
 
 $(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
-        $("#search_filters_main_container").slideUp("fast");
+        if(document.getElementById("all_services_menu_pane").style.display != "none"){
+            // do not hide filters
+        }else if(document.getElementById("appointments_list_container").style.display != "none"){
+            // do not hide filters
+        }else{
+            $("#search_filters_main_container").slideUp("fast");
+        }
+        
     } else {
         $("#search_filters_main_container").slideDown("fast");
     }

@@ -1,20 +1,25 @@
+import $ from "jquery";
+import { Link } from "react-router-dom"
+
+import {toggle_show_all_service, toggle_show_appointments_list_container, refreshPageFunc} from "./helperFunctions";
+
 function MobileBottomNav(){
     return (
-        <div id="mobile_bottom_nav">
+        <><div id="mobile_bottom_nav">
             <div style={{padding: "5px", display: "flex", flexDirection: "row !important", justifyContent: "space-between"}}>
-                <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "calc(25% - 2px)"}}>
-                    <div style={{color: "orange", textAlign: "center", fontSize: 20}}>
+                <div onClick={refreshPageFunc} style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "calc(25% - 2px)"}}>
+                    <Link to="/"><div style={{color: "orange", textAlign: "center", fontSize: 20}}>
                         <i className="fa fa-home"></i>
                     </div>
-                    <p style={{color: "white", fontSize: 12, textAlign: "center", marginTop: 1}}>Home</p>
+                    <p style={{color: "white", fontSize: 12, textAlign: "center", marginTop: 1}}>Home</p></Link>
                 </div>
-                <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "calc(25% - 2px)"}}>
+                <div onClick={toggle_show_all_service} style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "calc(25% - 2px)"}}>
                     <div style={{color: "orange", textAlign: "center", fontSize: 20}}>
                         <i className="fa fa-bars"></i>
                     </div>
                     <p style={{color: "white", fontSize: 12, textAlign: "center", marginTop: 1}}>Services</p>
                 </div>
-                <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "calc(25% - 2px)"}}>
+                <div onClick={toggle_show_appointments_list_container} style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "calc(25% - 2px)"}}>
                     <div style={{color: "orange", textAlign: "center", fontSize: 20}}>
                         <i className="fa fa-calendar-o"></i>
                     </div>
@@ -27,7 +32,7 @@ function MobileBottomNav(){
                     <p style={{color: "white", fontSize: 12, textAlign: "center", marginTop: 1}}>Account</p>
                 </div>
             </div>
-        </div>
+        </div></>
     );
 }
 
