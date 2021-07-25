@@ -491,6 +491,17 @@ footer {
 .all_service_each_category_item:hover{
   background-color:rgb(255, 188, 149);
 }
+#mobile_bottom_nav{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgb(32, 45, 56);
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid orange;
+}
 @media only screen and (max-width: 700px) {
   body {
     /*background-color: #212c2c;*/
@@ -619,8 +630,12 @@ footer {
   }
   .footer-items-container {
     display: block;
+    padding-bottom: 70px;
   }
   .footer-content-section {
     width: 100%;
+  }
+  #mobile_bottom_nav{
+    display: block;
   }
 }

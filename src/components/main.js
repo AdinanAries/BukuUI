@@ -3,6 +3,7 @@ import NewsSection from './newsSection';
 import RegisterBusiness from './registerBusiness';
 import RegisterBusinessAllInputs from './registerBusinessPane';
 import AllServicesMenu from './allServiceMenu';
+import MobileBottomNav from './mobileBottomNav';
 
 function Main(){
     return(
@@ -12,6 +13,7 @@ function Main(){
             <Hero />
             <RegisterBusiness />
             <NewsSection />
+            <MobileBottomNav />
         </main>
     )
 }
