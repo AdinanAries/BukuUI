@@ -6,15 +6,22 @@ import Main from "./components/main";
 import Footer from "./components/footer";
 import SearchResultsPage from './components/searchResults';
 import MobileBottomNav from './components/mobileBottomNav';
-
+import RegisterBusinessAllInputs from './components//registerBusinessPane';
+import AllServicesMenu from './components/allServiceMenu';
+import AppointmentsList from './components/appointmentsListContainer';
+import UserAccountContainer from './components/userAccountPage';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <AllServicesMenu />
+        <RegisterBusinessAllInputs />
         <Header />
         <Route exact path="/" component={ Main } />
         <Route exact path="/search" component={ SearchResultsPage } />
+        <Route exact path="/user" component={ UserAccountContainer } />
+        <Route exact path="/appointments" component={ AppointmentsList } />
         <Footer />
         <MobileBottomNav />
       </Router>

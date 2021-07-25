@@ -1,7 +1,7 @@
 import $ from "jquery";
 import { Link } from "react-router-dom"
 
-import {toggle_show_all_service, toggle_show_appointments_list_container, refreshPageFunc} from "./helperFunctions";
+import {toggle_show_all_service, hide_all_popups, refreshPageFunc} from "./helperFunctions";
 
 function MobileBottomNav(){
     return (
@@ -19,17 +19,17 @@ function MobileBottomNav(){
                     </div>
                     <p style={{color: "white", fontSize: 12, textAlign: "center", marginTop: 1}}>Services</p>
                 </div>
-                <div onClick={toggle_show_appointments_list_container} style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "calc(25% - 2px)"}}>
-                    <div style={{color: "orange", textAlign: "center", fontSize: 20}}>
+                <div onClick={hide_all_popups} style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "calc(25% - 2px)"}}>
+                    <Link to="/appointments"><div style={{color: "orange", textAlign: "center", fontSize: 20}}>
                         <i className="fa fa-calendar-o"></i>
                     </div>
-                    <p style={{color: "white", fontSize: 12, textAlign: "center", marginTop: 1}}>Appointments</p>
+                    <p style={{color: "white", fontSize: 12, textAlign: "center", marginTop: 1}}>Appointments</p></Link>
                 </div>
-                <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "calc(25% - 2px)"}}>
-                    <div style={{color: "orange", textAlign: "center", fontSize: 20}}>
+                <div onClick={hide_all_popups} style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "calc(25% - 2px)"}}>
+                    <Link to="/user"><div style={{color: "orange", textAlign: "center", fontSize: 20}}>
                         <i className="fa fa-user"></i>
                     </div>
-                    <p style={{color: "white", fontSize: 12, textAlign: "center", marginTop: 1}}>Account</p>
+                    <p style={{color: "white", fontSize: 12, textAlign: "center", marginTop: 1}}>Account</p></Link>
                 </div>
             </div>
         </div></>

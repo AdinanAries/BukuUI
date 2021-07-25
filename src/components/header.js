@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import HeaderSearchBox from "./headerSearchBox";
 import SearchFilters from './searchFilters';
 
-import {toggle_show_all_service, toggle_show_appointments_list_container, refreshPageFunc} from "./helperFunctions";
+import {toggle_show_all_service, hide_all_popups, refreshPageFunc} from "./helperFunctions";
 
 
 function Header(){
@@ -23,8 +23,10 @@ function Header(){
                             <i className="fa fa-home"></i>Home
                         </li></Link>
                         <li onClick={toggle_show_all_service}><i className="fa fa-bars"></i>Services</li>
-                        <li onClick={toggle_show_appointments_list_container}><i className="fa fa-calendar-o"></i>Appointments</li>
-                        <li><i className="fa fa-sign-in"></i>Login</li>
+                        <Link to="/appointments"><li onClick={hide_all_popups}>
+                            <i className="fa fa-calendar-o"></i>Appointments</li></Link>
+                        <Link to="/user"><li onClick={hide_all_popups}>
+                            <i className="fa fa-sign-in"></i>Login</li></Link>
                     </ul>
                 </div>
                 <div className="each-header-section header-menu-new-button" style={{paddingTop: 5}}>
