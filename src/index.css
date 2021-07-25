@@ -613,6 +613,10 @@ footer {
     height: calc(100vh - 90px);
     width: 100%;
   }
+  .all_service_each_category_item{
+    height: 120px;
+    width: calc(33.3% - 3px);
+  }
   .footer-items-container {
     display: block;
   }

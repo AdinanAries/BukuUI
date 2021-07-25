@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 import barberIcon from '../images/barber-pole.png';
 import medsIcon from '../images/medical-doctor.png';
 import nailsIcon from '../images/nails.png';
@@ -7,6 +9,10 @@ import hairDryerIcon from '../images/hair-dryer.png';
 import favsProPIc from '../images/ProfilePic17.png';
 
 import AboutBuku from './aboutBukuSection';
+
+function toggle_show_all_service(){
+    $("#all_services_menu_pane").toggle("up");
+}
 
 function Hero(){
     return (
@@ -52,6 +58,10 @@ function Hero(){
                                 <p className="name-p">Hair Salon</p>
                             </div>
                         </a>
+                    </div>
+                    <div onClick={toggle_show_all_service} style={{cursor: "pointer", maxWidth: 700, margin: "auto", marginTop: 20, borderRadius: 4, backgroundColor: "darkslateblue", padding: 10, color: "white", textAlign: "center", fontWeight: "bolder"}}>
+                        <i style={{marginRight: 10, color: "orange"}} className="fa fa-bars"></i>
+                        all services
                     </div>
                     <p className="top-border"></p>
                     <h1 className="section-title">Suggested Places</h1>
