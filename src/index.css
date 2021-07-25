@@ -498,9 +498,9 @@ footer {
   left: 0;
   z-index: 2;
   background-color: rgb(32, 45, 56);
-  height: 50px;
+  height: 55px;
   width: 100%;
-  border-top: 1px solid orange;
+  border-top: 1px solid rgba(255, 166, 0, 0.719);
 }
 @media only screen and (max-width: 700px) {
   body {
