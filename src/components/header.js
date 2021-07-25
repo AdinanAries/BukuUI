@@ -1,7 +1,12 @@
+import $ from 'jquery';
 import { Link } from 'react-router-dom';
 
 import HeaderSearchBox from "./headerSearchBox";
 import SearchFilters from './searchFilters';
+
+function toggle_show_all_service(){
+    $("#all_services_menu_pane").toggle("up");
+}
 
 function refreshPageFunc(){
     setTimeout("location.reload(true);", 0);
@@ -19,10 +24,10 @@ function Header(){
                 </div>
                 <div className="each-header-section header-main-nav">
                     <ul>
-                        <li onClick={refreshPageFunc} className="active">
-                            <Link to="/" style={{color: "white"}}><i className="fa fa-home"></i>Home</Link>
-                        </li>
-                        <li><i className="fa fa-bars"></i>Services</li>
+                        <Link to="/"><li onClick={refreshPageFunc} className="active">
+                            <i className="fa fa-home"></i>Home
+                        </li></Link>
+                        <li onClick={toggle_show_all_service}><i className="fa fa-bars"></i>Services</li>
                         <li><i className="fa fa-calendar-o"></i>Appointments</li>
                         <li><i className="fa fa-sign-in"></i>Login</li>
                     </ul>

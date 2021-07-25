@@ -13,47 +13,77 @@ import $ from "jquery"
 let selected_booking_user_id_option = "";
 
 function show_booking_select_service_pane(){
-    if($(document).width() > 700){$("#booking_select_time_spot").toggle("up")}
+    if($(document).width() > 700){
+        $("#booking_select_time_spot").toggle("up");
+        $('html, body').animate({scrollTop:0}, '300');
+    }
     $("#booking_workflow_main_container").toggle("up");
 }
 function back_to_select_time_spot(){
-    if($(document).width() > 700){$("#booking_select_time_spot").toggle("up")}
+    if($(document).width() > 700){
+        $("#booking_select_time_spot").toggle("up");
+        $('html, body').animate({scrollTop:0}, '300');
+    }
     $("#booking_workflow_main_container").toggle("up");
 }
 function show_booking_select_user_option(){
     $("#booking_select_service_pane").toggle("up");
     $("#booking_select_user_option").toggle("up");
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
 }
 function back_to_select_service_pane(){
     $("#booking_select_service_pane").toggle("up");
     $("#booking_select_user_option").toggle("up");
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
 }
 function show_booking_user_signup_form(){
     selected_booking_user_id_option = "signup";
     $("#booking_user_signup_form").toggle("up");
     $("#booking_select_user_option").toggle("up");
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
 }
 function back_to_select_user_option_from_signup(){
     $("#booking_user_signup_form").toggle("up");
     $("#booking_select_user_option").toggle("up");
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
 }
 function show_booking_user_login_form(){
     selected_booking_user_id_option = "login";
     $("#booking_user_login_form").toggle("up");
     $("#booking_select_user_option").toggle("up");
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
 }
 function back_to_select_user_option_from_login(){
     $("#booking_user_login_form").toggle("up");
     $("#booking_select_user_option").toggle("up");
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
 }
 function show_booking_user_anony_form(){
     selected_booking_user_id_option = "anonymous"
     $("#booking_user_anony_form").toggle("up");
     $("#booking_select_user_option").toggle("up");
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
 }
 function back_to_select_user_option_from_anony(){
     $("#booking_user_anony_form").toggle("up");
     $("#booking_select_user_option").toggle("up");
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
 }
 function show_booking_select_cash_or_card_payments(){
     $("#booking_select_cash_or_card_payments").toggle("up");
@@ -63,6 +93,9 @@ function show_booking_select_cash_or_card_payments(){
         $("#booking_user_signup_form").toggle("up");
     }else if(selected_booking_user_id_option === "anonymous"){
         $("#booking_user_anony_form").toggle("up");
+    }
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
     }
 }
 function submit_booking_user_signup(){
@@ -77,10 +110,16 @@ function submit_anonymous_user_info(){
 function show_booking_final_submission_pane(){
     $("#booking_final_submission_pane").toggle("up");
     $("#booking_select_cash_or_card_payments").toggle("up");
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
 }
 function back_to_booking_select_card_cash_payments_form(){
     $("#booking_final_submission_pane").toggle("up");
     $("#booking_select_cash_or_card_payments").toggle("up");
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
 }
 function booking_select_online_payment(){
     show_booking_final_submission_pane()
@@ -91,10 +130,16 @@ function booking_select_cash_payment(){
 function show_booking_selected_service_provider(){
     $("#booking_selected_service_provider").toggle("up");
     $("#booking_main_search_results_list").toggle("up");
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
 }
 function back_to_search_results_list(){
     $("#booking_selected_service_provider").toggle("up");
     $("#booking_main_search_results_list").toggle("up");
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
 }
 
 function SearchResultsPage(){

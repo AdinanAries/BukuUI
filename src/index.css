@@ -78,7 +78,7 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
-.header-main-nav{
+.header-main-nav {
   padding-top: 10px;
 }
 .header-main-nav ul li {
@@ -90,17 +90,24 @@ footer {
   font-weight: bolder;
   font-size: 13px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 .header-main-nav ul li i {
   color: rgb(87, 221, 255);
   margin-right: 5px;
   font-size: 15px;
 }
+.header-main-nav ul li:hover i {
+  color: rgb(255, 110, 25);
+}
+.header-main-nav ul li:hover {
+  color: rgb(255, 188, 149);
+}
 .header-main-nav ul li.active i {
   color: rgb(255, 110, 25);
 }
 .header-main-nav ul li.active {
-  color: rgb(255, 188, 149);
+  color: rgb(255, 188, 149) !important;
 }
 .header-search-section {
   width: 50%;
@@ -414,25 +421,25 @@ footer {
   justify-content: space-between;
   padding: 0 10px;
 }
-.search-results-list{
+.search-results-list {
   width: 75%;
 }
-.search-results-right-section{
+.search-results-right-section {
   width: calc(25% - 5px);
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   min-height: 200px;
   border-radius: 4px;
   margin-bottom: 5px;
 }
-.search-results-list-each-item{
-  background-color: rgba(0,0,0,0.2);
+.search-results-list-each-item {
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   margin-bottom: 5px;
   overflow: hidden;
   display: flex;
   border-left: 7px solid #ffe96b;
 }
-.search-results-list-each-item-left-section{
+.search-results-list-each-item-left-section {
   margin-right: 10px;
   background: none;
   box-shadow: none;
@@ -444,17 +451,46 @@ footer {
   border-top: none;
   height: 100%;
 }
-.each-search-result-spots-section{
+.each-search-result-spots-section {
   width: 65%;
 }
-.search-results-each-time-spot{
+.search-results-each-time-spot {
   margin-right: 5px;
   margin-bottom: 5px;
   text-align: center;
   padding: 10px;
   width: calc(33% - 4.4px);
 }
-
+#register_business_pane {
+  position: fixed;
+  background-color: #212c2c;
+  z-index: 1;
+  top: 90px;
+  overflow-y: auto;
+  height: calc(100vh - 90px);
+  width: 100%;
+}
+#all_services_menu_pane {
+  position: fixed;
+  background-color: #212c2c;
+  z-index: 1;
+  top: 90px;
+  overflow-y: auto;
+  height: calc(100vh - 90px);
+  width: 100%;
+}
+.all_service_each_category_item{
+  height: 120px;
+  width: calc(25% - 3px);
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,0,0.1);
+  margin-bottom: 4px;
+  background: rgba(255,255,0,0.1);
+  cursor: pointer;
+}
+.all_service_each_category_item:hover{
+  background-color:rgb(255, 188, 149);
+}
 @media only screen and (max-width: 700px) {
   body {
     /*background-color: #212c2c;*/
@@ -544,32 +580,32 @@ footer {
   .search-results-page-content-container {
     padding: 0;
   }
-  .search-results-page-content-container{
+  .search-results-page-content-container {
     display: block;
   }
-  .search-results-list{
+  .search-results-list {
     width: 100%;
   }
-  .search-results-right-section{
+  .search-results-right-section {
     width: 100%;
   }
-  .search-results-list-each-item{
+  .search-results-list-each-item {
     display: block;
     border: none;
     border-radius: 0;
     padding-top: 10px;
   }
-  .search-results-list-each-item-left-section{
+  .search-results-list-each-item-left-section {
     width: 100%;
     padding: 10px;
   }
-  .each-search-result-spots-section{
+  .each-search-result-spots-section {
     width: 100%;
   }
-  .search-results-each-time-spot{
+  .search-results-each-time-spot {
     width: calc(50% - 5px);
   }
-  #booking_workflow_main_container{
+  #booking_workflow_main_container {
     position: fixed;
     background-color: #212c2c;
     top: 90px;
