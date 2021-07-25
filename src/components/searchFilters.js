@@ -21,7 +21,7 @@ function show_search_filter_by_services_list(){
 
 function SearchFilters(){
     return (
-        <section>
+        <section id="search_filters_main_container">
             <div style={{display: "flex", flexDirection: "row !important", justifyContent: "space-between", maxWidth: 700, padding: "0 10px", margin: "auto", marginTop: 5, position: "relative"}}>
                 <div style={{borderBottom: "1px solid rgba(255,255,0,0.2)", padding: "10px 0", width: "calc(50% - 2px)"}}>
                     <i style={{marginRight: 5, color: "orange"}} className="fa fa-map-marker"></i>
