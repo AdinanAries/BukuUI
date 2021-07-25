@@ -37,7 +37,7 @@ function SearchFilters(){
                     <div className="search-filters-include-services">
                         <div className="search-filters-include-services-each-section">
                             <div style={{postion: "absolute", top: "100%", backgroundColor: "white", border: "1px solid rgba(0,0,0,0.3)", marginBottom: 10, borderRadius: 4, padding: "0 10px"}}>
-                                <input style={{fontSize: 13, fontWeight: "bolder", color: "darkslateblue", padding: 5, border: 0, width: "100%"}} type="text" placeholder="when?"/>
+                                <input style={{fontSize: 13, fontWeight: "bolder", color: "darkslateblue", padding: 10, border: 0, width: "100%"}} type="text" placeholder="when?"/>
                             </div>
                             <div style={{padding: 5, display: "flex", flexDirection: "row !important"}}>
                                 
