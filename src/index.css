@@ -380,20 +380,37 @@ footer {
 .footer-content-section {
   width: 33.3%;
 }
-.search-filters-include-services {
+#search-filter-by-services-list {
   position: absolute;
+  height: calc(100vh - 200px);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+  display: none;
+  width: 100%;
   top: 100%;
   left: 0;
   z-index: 100;
   width: 100%;
+  padding-bottom: 45px;
   background-color: white;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
   border-top: 4px solid orange;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+}
+.search-filters-include-services {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  overflow-y: auto;
+  height: 100%;
+}
+#filtered_search_submit_button {
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+  width: 100%;
+  background-color: white;
 }
 .search-filters-include-services-each-section {
   width: calc(50% - 5px);
@@ -478,20 +495,21 @@ footer {
   overflow-y: auto;
   height: calc(100vh - 90px);
   width: 100%;
+  overflow-y: auto;
 }
-.all_service_each_category_item{
+.all_service_each_category_item {
   height: 120px;
   width: calc(25% - 3px);
   border-radius: 4px;
-  border: 1px solid rgba(255,255,0,0.1);
+  border: 1px solid rgba(255, 255, 0, 0.1);
   margin-bottom: 4px;
-  background: rgba(255,255,0,0.1);
+  background: rgba(255, 255, 0, 0.1);
   cursor: pointer;
 }
-.all_service_each_category_item:hover{
-  background-color:rgb(255, 188, 149);
+.all_service_each_category_item:hover {
+  background-color: rgb(255, 188, 149);
 }
-#mobile_bottom_nav{
+#mobile_bottom_nav {
   display: none;
   position: fixed;
   bottom: 0;
@@ -585,6 +603,10 @@ footer {
   .search-filters-include-services {
     display: block;
   }
+  #search-filter-by-services-list{
+    height: calc(100vh - 142px);
+    border-radius: 0;
+  }
   .search-filters-include-services-each-section {
     width: 100%;
   }
@@ -624,7 +646,7 @@ footer {
     height: calc(100vh - 90px);
     width: 100%;
   }
-  .all_service_each_category_item{
+  .all_service_each_category_item {
     height: 120px;
     width: calc(33.3% - 3px);
   }
@@ -635,7 +657,7 @@ footer {
   .footer-content-section {
     width: 100%;
   }
-  #mobile_bottom_nav{
+  #mobile_bottom_nav {
     display: block;
   }
 }

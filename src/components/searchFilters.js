@@ -32,7 +32,7 @@ function SearchFilters(){
                     <input readonly="true" type="text"  style={{cursor: "pointer", color: "white", background: "none", border: "none", width: "calc(100% - 37px)"}} value="Barber, More..." />
                     <i id="show-services-filter-list-caret" style={{color: "crimson", marginLeft: 5, transition: "400ms all ease-in-out 50ms"}} className="fa fa-caret-down"></i>
                 </div>
-                <div id="search-filter-by-services-list" style={{display: "none"}}>
+                <div id="search-filter-by-services-list">
                     
                     <div className="search-filters-include-services">
                         <div className="search-filters-include-services-each-section">
@@ -100,6 +100,17 @@ function SearchFilters(){
                                 </div>
                                 <label for="filter-podiatry-checkbox">Podiatry</label>
                             </div>
+                            <div style={{padding: 5, display: "flex", flexDirection: "row !important"}}>
+                                <div className="search-filter-by-service-each-service-toggle" style={{marginRight: 10}}>
+                                    <input type="checkbox" id="filter-makeup-checkbox"/>
+                                    <div>
+                                        <label for="filter-makeup-checkbox"></label>
+                                    </div>
+                                </div>
+                                <label for="filter-makeup-checkbox">Makeup Artist
+                                    <span style={{backgroundColor: "green", fontSize: 12, color: "white", padding: 3, marginLeft: 5, borderRadius: 4}}>new</span>
+                                </label>
+                            </div>
                         </div>
                         <div className="search-filters-include-services-each-section">
                             <div style={{padding: 5, display: "flex", flexDirection: "row !important"}}>
@@ -153,12 +164,36 @@ function SearchFilters(){
                                     <span style={{backgroundColor: "green", fontSize: 12, color: "white", padding: 3, marginLeft: 5, borderRadius: 4}}>new</span>
                                 </label>
                             </div>
-                            <div style={{cursor: "pointer", textAlign: "center", fontWeight: "bolder", fontSize: 14,padding: 10, backgroundColor: "green", color: "white", marginTop: 10, borderRadius: 10}}>
+                            <div style={{padding: 5, display: "flex", flexDirection: "row !important"}}>
+                                <div className="search-filter-by-service-each-service-toggle" style={{marginRight: 10}}>
+                                    <input type="checkbox" id="filter-makeup-checkbox"/>
+                                    <div>
+                                        <label for="filter-makeup-checkbox"></label>
+                                    </div>
+                                </div>
+                                <label for="filter-makeup-checkbox">Makeup Artist
+                                    <span style={{backgroundColor: "green", fontSize: 12, color: "white", padding: 3, marginLeft: 5, borderRadius: 4}}>new</span>
+                                </label>
+                            </div>
+                            <div style={{padding: 5, display: "flex", flexDirection: "row !important"}}>
+                                <div className="search-filter-by-service-each-service-toggle" style={{marginRight: 10}}>
+                                    <input type="checkbox" id="filter-makeup-checkbox"/>
+                                    <div>
+                                        <label for="filter-makeup-checkbox"></label>
+                                    </div>
+                                </div>
+                                <label for="filter-makeup-checkbox">Makeup Artist
+                                    <span style={{backgroundColor: "green", fontSize: 12, color: "white", padding: 3, marginLeft: 5, borderRadius: 4}}>new</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="filtered_search_submit_button">
+                            <div style={{cursor: "pointer", textAlign: "center", fontWeight: "bolder", fontSize: 14, padding: 10, backgroundColor: "green", color: "white", borderRadius: 10}}>
                                 <i style={{marginRight: 5, color: "orange"}} className="fa fa-search" aria-hidden="true"></i>
                                 Search
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </section>
