@@ -579,7 +579,7 @@ function SearchResultsPage(){
                                                 <div>
                                                     <p style={{color: "orange", textAlign: "center", fontWeight: "bolder", marginBottom: 20}}>Select a service below</p>
                                                     <div>
-                                                        <div onClick={show_booking_select_user_option} style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                        <div style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
                                                             <div style={{padding: 10, width: "calc(100% - 70px)"}}>
                                                                 <p>
                                                                     <span style={{fontSize: 14, color: "lightgreen", marginRight: 10}}>General Medical Checkup</span>
@@ -594,11 +594,11 @@ function SearchResultsPage(){
                                                                     </span>
                                                                 </p>
                                                             </div>
-                                                            <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                            <div onClick={show_booking_select_user_option} style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
                                                                 Choose
                                                             </div>
                                                         </div>
-                                                        <div onClick={show_booking_select_user_option} style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                        <div style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
                                                             <div style={{padding: 10, width: "calc(100% - 70px)"}}>
                                                                 <p>
                                                                     <span style={{fontSize: 14, color: "lightgreen", marginRight: 10}}>General Medical Checkup</span>
@@ -613,11 +613,11 @@ function SearchResultsPage(){
                                                                     </span>
                                                                 </p>
                                                             </div>
-                                                            <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                            <div onClick={show_booking_select_user_option} style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
                                                                 Choose
                                                             </div>
                                                         </div>
-                                                        <div onClick={show_booking_select_user_option} style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                        <div style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
                                                             <div style={{padding: 10, width: "calc(100% - 70px)"}}>
                                                                 <p>
                                                                     <span style={{fontSize: 14, color: "lightgreen", marginRight: 10}}>General Medical Checkup</span>
@@ -632,11 +632,11 @@ function SearchResultsPage(){
                                                                     </span>
                                                                 </p>
                                                             </div>
-                                                            <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                            <div onClick={show_booking_select_user_option} style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
                                                                 Choose
                                                             </div>
                                                         </div>
-                                                        <div onClick={show_booking_select_user_option} style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                        <div style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
                                                             <div style={{padding: 10, width: "calc(100% - 70px)"}}>
                                                                 <p>
                                                                     <span style={{fontSize: 14, color: "lightgreen", marginRight: 10}}>General Medical Checkup</span>
@@ -651,11 +651,11 @@ function SearchResultsPage(){
                                                                     </span>
                                                                 </p>
                                                             </div>
-                                                            <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                            <div onClick={show_booking_select_user_option} style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
                                                                 Choose
                                                             </div>
                                                         </div>
-                                                        <div onClick={show_booking_select_user_option} style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                        <div style={{borderLeft: "4px solid lightgreen", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
                                                             <div style={{padding: 10, width: "calc(100% - 70px)"}}>
                                                                 <p>
                                                                     <span style={{fontSize: 14, color: "lightgreen", marginRight: 10}}>General Medical Checkup</span>
@@ -670,7 +670,7 @@ function SearchResultsPage(){
                                                                     </span>
                                                                 </p>
                                                             </div>
-                                                            <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                            <div onClick={show_booking_select_user_option} style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
                                                                 Choose
                                                             </div>
                                                         </div>
@@ -686,36 +686,36 @@ function SearchResultsPage(){
                                                     <p style={{color: "orange", textAlign: "center", fontWeight: "bolder", marginBottom: 20}}>Select User Option
                                                     </p>
                                                     <div>
-                                                        <div onClick={show_booking_user_login_form} style={{borderLeft: "4px solid skyblue", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                        <div style={{borderLeft: "4px solid skyblue", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
                                                             <div style={{padding: 10, width: "calc(100% - 70px)"}}>
                                                                 <p>
                                                                     <span style={{fontSize: 14, color: "skyblue", marginRight: 10}}>Login</span>
                                                                     <i style={{color: "lightgreen"}} class="fa fa-sign-in"></i>
                                                                 </p>
                                                             </div>
-                                                            <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "darkslateblue", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                            <div onClick={show_booking_user_login_form} style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "darkslateblue", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
                                                                 Choose
                                                             </div>
                                                         </div>
-                                                        <div onClick={show_booking_user_signup_form} style={{borderLeft: "4px solid slateblue", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                        <div style={{borderLeft: "4px solid slateblue", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
                                                             <div style={{padding: 10, width: "calc(100% - 70px)"}}>
                                                                 <p>
                                                                     <span style={{fontSize: 14, color: "slateblue", marginRight: 10}}>Signup</span>
                                                                     <i style={{color: "pink"}} class="fa fa-user-plus"></i>
                                                                 </p>
                                                             </div>
-                                                            <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "green", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                            <div onClick={show_booking_user_signup_form} style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "green", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
                                                                 Choose
                                                             </div>
                                                         </div>
-                                                        <div onClick={show_booking_user_anony_form} style={{borderLeft: "4px solid goldenrod", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                        <div style={{borderLeft: "4px solid goldenrod", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
                                                             <div style={{padding: 10, width: "calc(100% - 70px)"}}>
                                                                 <p>
                                                                     <span style={{fontSize: 14, color: "goldenrod", marginRight: 10}}>Book Without Account</span>
                                                                     <i style={{color: "yellow"}} class="fa fa-user"></i>
                                                                 </p>
                                                             </div>
-                                                            <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                            <div onClick={show_booking_user_anony_form} style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
                                                                 Choose
                                                             </div>
                                                         </div>
@@ -852,25 +852,25 @@ function SearchResultsPage(){
                                                 <div>
                                                     <p style={{color: "orange", textAlign: "center", fontWeight: "bolder", marginBottom: 20}}>Select Payment</p>
                                                     <div>
-                                                        <div onClick={booking_select_online_payment} style={{borderLeft: "4px solid goldenrod", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                        <div style={{borderLeft: "4px solid goldenrod", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
                                                             <div style={{padding: 10, width: "calc(100% - 70px)"}}>
                                                                 <p>
                                                                     <span style={{fontSize: 14, color: "goldenrod", marginRight: 10}}>Pay Now</span>
                                                                     <i style={{color: "yellow"}} class="fa fa-credit-card"></i>
                                                                 </p>
                                                             </div>
-                                                            <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                            <div onClick={booking_select_online_payment} style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "crimson", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
                                                                 Choose
                                                             </div>
                                                         </div>
-                                                        <div onClick={booking_select_cash_payment} style={{borderLeft: "4px solid skyblue", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
+                                                        <div style={{borderLeft: "4px solid skyblue", backgroundColor: "rgba(0,0,0,0.2)", marginBottom: 5, display: "flex", flexDirection: "row", justifyContent: "space-between", borderRadius: 4, overflow: "hidden"}}>
                                                             <div style={{padding: 10, width: "calc(100% - 70px)"}}>
                                                                 <p>
                                                                     <span style={{fontSize: 14, color: "skyblue", marginRight: 10}}>Pay at Counter</span>
                                                                     <i style={{color: "lightgreen"}} class="fa fa-money"></i>
                                                                 </p>
                                                             </div>
-                                                            <div style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "darkslateblue", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
+                                                            <div onClick={booking_select_cash_payment} style={{cursor: "pointer", textAlign: "center", width: 70, backgroundColor: "darkslateblue", fontSize: 13, display: "flex", flexDirection: "column", justifyContent: "center", color: "white", fontWeight: "bolder"}}>
                                                                 Choose
                                                             </div>
                                                         </div>
