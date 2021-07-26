@@ -492,7 +492,7 @@ footer {
 #all_services_menu_pane {
   position: fixed;
   background-color: #212c2c;
-  z-index: 1;
+  z-index: 4;
   top: 90px;
   overflow-y: auto;
   height: calc(100vh - 90px);
@@ -502,7 +502,7 @@ footer {
 #notifications_container{
   position: fixed;
   background-color: #212c2c;
-  z-index: 1;
+  z-index: 4;
   top: 90px;
   overflow-y: auto;
   height: calc(100vh - 90px);
