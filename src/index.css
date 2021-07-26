@@ -690,9 +690,10 @@ footer {
   #booking_workflow_main_container {
     position: fixed;
     background-color: #212c2c;
-    top: 90px;
+    z-index: 1000;
+    top: 46px;
     overflow-y: auto;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 101px);
     width: 100%;
   }
   .all_service_each_category_item {
