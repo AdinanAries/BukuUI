@@ -129,9 +129,11 @@ function booking_select_cash_payment(){
 }
 function show_booking_selected_service_provider(){
     document.getElementById("booking_main_search_results_list").style.display = "none";
-    document.getElementById("booking_selected_service_provider").style.display = "block";
-    setTimeout(()=>{window.scrollTo({ top: 0, behavior: 'smooth' });}, 550);
+    setTimeout(()=>{
+        document.getElementById("booking_selected_service_provider").style.display = "block";
+    },250);
     
+    //setTimeout(()=>{window.scrollTo({ top: 0, behavior: 'smooth' });}, 50);
    /*$("#booking_selected_service_provider").toggle("up");
     $("#booking_main_search_results_list").toggle("up");
     setTimeout(()=>{
