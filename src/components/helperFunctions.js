@@ -7,6 +7,7 @@ export function toggle_show_all_service(){
 
 export function hide_all_popups(){
     document.getElementById("all_services_menu_pane").style.display = "none";
+    $('html, body').animate({scrollTop:0}, '300');
 }
 
 export function refreshPageFunc(){

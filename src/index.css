@@ -521,6 +521,7 @@ footer {
   border-top: 1px solid rgba(255, 166, 0, 0.452);
 }
 #appointments_list_container{
+  padding-top: 80px;
   min-height: 500px;
   background-color: #212c2c;
 }

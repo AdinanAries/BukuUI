@@ -20,16 +20,16 @@ function MobileBottomNav(){
                     <p style={{color: "white", fontSize: 11, textAlign: "center", marginTop: 1}}>Services</p>
                 </div>
                 <div onClick={hide_all_popups} style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "calc(25% - 2px)", position: "relative"}}>
-                    <div style={{border: "2px solid #212c2c", position: "absolute", right: 20, top: -3, width: 17, height: 15, backgroundColor: "white", fontSize: 11, fontWeight: "bolder", borderRadius: "100%", textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                    <div style={{border: "2px solid #212c2c", position: "absolute", right: 22, top: -3, width: 18, height: 18, backgroundColor: "white", fontSize: 12, fontWeight: "bolder", borderRadius: "100%", textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                         0
                     </div>
-                    <Link to="/appointments"><div style={{color: "orange", textAlign: "center", fontSize: 18}}>
+                    <Link to="/"><div style={{color: "orange", textAlign: "center", fontSize: 18}}>
                         <i className="fa fa-bell"></i>
                     </div>
                     <p style={{color: "white", fontSize: 11, textAlign: "center", marginTop: 1}}>Notifications</p></Link>
                 </div>
                 <div onClick={hide_all_popups} style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "calc(25% - 2px)"}}>
-                    <Link to="/user"><div style={{color: "orange", textAlign: "center", fontSize: 18}}>
+                    <Link to="/appointments"><div style={{color: "orange", textAlign: "center", fontSize: 18}}>
                         <i className="fa fa-calendar"></i>
                     </div>
                     <p style={{color: "white", fontSize: 11, textAlign: "center", marginTop: 1}}>Appointments</p></Link>
