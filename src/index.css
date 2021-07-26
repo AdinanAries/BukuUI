@@ -518,15 +518,26 @@ footer {
   background-color: rgb(32, 45, 56);
   height: 55px;
   width: 100%;
-  border-top: 1px solid rgba(255, 166, 0, 0.719);
+  border-top: 1px solid rgba(255, 166, 0, 0.452);
 }
 #appointments_list_container{
   min-height: 500px;
   background-color: #212c2c;
 }
 #user_account_page{
+  padding-top: 100px;
   min-height: 500px;
   background-color: #212c2c;
+}
+.user-account-page-main-container{
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+}
+.user-account-page-main-sections-each{
+  width: calc(50% - 2px);
 }
 @media only screen and (max-width: 700px) {
   body {
@@ -657,6 +668,12 @@ footer {
   .all_service_each_category_item {
     height: 120px;
     width: calc(33.3% - 3px);
+  }
+  .user-account-page-main-container{
+    display: block;
+  }
+  .user-account-page-main-sections-each{
+    width: 100%;
   }
   .footer-items-container {
     display: block;

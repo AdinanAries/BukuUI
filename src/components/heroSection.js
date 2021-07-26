@@ -59,7 +59,7 @@ function Hero(){
                             </div>
                         </a>
                     </div>
-                    <div onClick={toggle_show_all_service} style={{cursor: "pointer", maxWidth: 700, margin: "auto", marginTop: 20, borderRadius: 4, backgroundColor: "darkslateblue", padding: 10, color: "white", textAlign: "center", fontWeight: "bolder"}}>
+                    <div onClick={toggle_show_all_service} style={{cursor: "pointer", maxWidth: 700, margin: "auto", marginTop: 20, borderRadius: 4, backgroundColor: "rgba(233,11,221,0.3)", border: "1px solid rgba(233,221,11,0.4)", padding: 10, color: "white", textAlign: "center"}}>
                         <i style={{marginRight: 10, color: "orange"}} className="fa fa-bars"></i>
                         all services
                     </div>
