@@ -532,6 +532,12 @@ footer {
   width: 100%;
   border-top: 1px solid rgba(255, 166, 0, 0.452);
 }
+#mobile_bottom_nav div.active p{
+  color: skyblue !important;
+}
+#mobile_bottom_nav div.active i{
+  color: turquoise !important;
+}
 #appointments_list_container{
   padding-top: 80px;
   min-height: 500px;

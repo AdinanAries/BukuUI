@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import HeaderSearchBox from "./headerSearchBox";
 import SearchFilters from './searchFilters';
 
-import {toggle_show_all_service, hide_all_popups, refreshPageFunc} from "./helperFunctions";
+import {toggle_show_all_service, hide_all_popups, toggle_show_notifications_container, refreshPageFunc} from "./helperFunctions";
 
 
 function Header(){
@@ -19,14 +19,23 @@ function Header(){
                 </div>
                 <div className="each-header-section header-main-nav">
                     <ul>
-                        <Link to="/"><li onClick={refreshPageFunc} className="active">
+                        <Link to="/"><li onClick={refreshPageFunc} className="active main_menu_item">
                             <i className="fa fa-home"></i>Home
                         </li></Link>
-                        <li onClick={toggle_show_all_service}><i className="fa fa-bars"></i>Services</li>
-                        <Link to="/appointments"><li onClick={hide_all_popups}>
+                        <li id="top_main_menu_all_services_option" onClick={toggle_show_all_service} className="main_menu_item">
+                            <i className="fa fa-bars"></i>Services</li>
+                        <Link to="/appointments"><li id="top_main_menu_appointments_option" onClick={()=>{hide_all_popups("top_main_menu_appointments_option")}} className="main_menu_item">
                             <i className="fa fa-calendar-o"></i>Appointments</li></Link>
-                        <Link to="/user"><li onClick={hide_all_popups}>
+                        <Link to="/user"><li id="top_main_menu_account_option" onClick={()=>{hide_all_popups("top_main_menu_account_option")}} className="main_menu_item">
                             <i className="fa fa-sign-in"></i>Login</li></Link>
+                        <li className="main_menu_item" id="top_main_menu_notifications_option" onClick={toggle_show_notifications_container} style={{position: "relative"}}>
+                            <div style={{color: "black",border: "2px solid #212c2c", position: "absolute", right: -4, top: -10, width: 18, height: 18, backgroundColor: "white", fontSize: 12, fontWeight: "bolder", borderRadius: "100%", textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                0
+                            </div>
+                            <span style={{color: "orange", textAlign: "center", fontSize: 18}}>
+                                <i className="fa fa-bell"></i>
+                            </span>
+                        </li>
                     </ul>
                 </div>
                 <div className="each-header-section header-menu-new-button" style={{paddingTop: 5}}>
