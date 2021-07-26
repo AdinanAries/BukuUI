@@ -25,11 +25,11 @@ function SearchFilters(){
             <div style={{display: "flex", flexDirection: "row !important", justifyContent: "space-between", maxWidth: 700, padding: "0 10px", margin: "auto", marginTop: 5, position: "relative"}}>
                 <div style={{borderBottom: "1px solid rgba(255,255,0,0.2)", padding: "10px 0", width: "calc(50% - 2px)"}}>
                     <i style={{marginRight: 5, color: "orange"}} className="fa fa-map-marker"></i>
-                    <input type="text"  style={{color: "white", background: "none", border: "none", width: "calc(100% - 15px)"}} value="Bronx, NY, USA 1123" />
+                    <input type="text"  style={{color: "white", background: "none", border: "none", width: "calc(100% - 17px)"}} value="Bronx, NY, USA 1123" />
                 </div>
                 <div onClick={show_search_filter_by_services_list} style={{borderBottom: "1px solid rgba(255,255,0,0.2)", padding: "10px 0", width: "calc(50% - 2px)"}}>
                     <i style={{marginRight: 5, color: "orange"}} className="fa fa-bars"></i>
-                    <input readonly="true" type="text"  style={{cursor: "pointer", color: "white", background: "none", border: "none", width: "calc(100% - 37px)"}} value="Barber, More..." />
+                    <input readonly="true" type="text"  style={{cursor: "pointer", color: "white", background: "none", border: "none", width: "calc(100% - 39px)"}} value="Barber, More..." />
                     <i id="show-services-filter-list-caret" style={{color: "crimson", marginLeft: 5, transition: "400ms all ease-in-out 50ms"}} className="fa fa-caret-down"></i>
                 </div>
                 <div id="search-filter-by-services-list">
