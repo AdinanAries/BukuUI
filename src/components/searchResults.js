@@ -128,19 +128,21 @@ function booking_select_cash_payment(){
     show_booking_final_submission_pane()
 }
 function show_booking_selected_service_provider(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     $("#booking_selected_service_provider").toggle("up");
     $("#booking_main_search_results_list").toggle("up");
-    setTimeout(()=>{
+    /*setTimeout(()=>{
         $('html, body').animate({scrollTop:0}, '300');
-    }, 550)
+    }, 550)*/
     
 }
 function back_to_search_results_list(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     $("#booking_selected_service_provider").toggle("up");
     $("#booking_main_search_results_list").toggle("up");
-    setTimeout(()=>{
+    /*setTimeout(()=>{
         $('html, body').animate({scrollTop:0}, '300');
-    }, 550)
+    }, 550);*/
 }
 
 function SearchResultsPage(){
