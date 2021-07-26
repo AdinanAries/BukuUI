@@ -17,10 +17,12 @@ function toggle_show_all_service(){
 function Hero(){
     return (
         <section className="hero-section">
+            <div id="hero_section_svg_bg">
+            </div>
             <div className="hero-section-inner">
                 <div className="wrapper">
                     <h1 className="section-title" style={{marginBottom: "10px", marginTop: 10}}>Popular Services</h1>
-                    <div id="popular-services-section">
+                    <div id="popular-services-section" style={{zIndex: 1, position: "relative"}}>
                         <a href="">
                             <div className="each-popular-service">
                                 <p className="img-p">
@@ -59,12 +61,11 @@ function Hero(){
                             </div>
                         </a>
                     </div>
-                    <div onClick={toggle_show_all_service} style={{cursor: "pointer", maxWidth: 700, margin: "auto", marginTop: 20, borderRadius: 4, backgroundColor: "rgba(233,11,221,0.3)", border: "1px solid rgba(233,221,11,0.4)", padding: 10, color: "white", textAlign: "center"}}>
+                    <div onClick={toggle_show_all_service} style={{zIndex: 1, position: "relative", cursor: "pointer", maxWidth: 700, margin: "auto", marginTop: 20, borderRadius: 4, backgroundColor: "rgba(95,11,85)", border: "1px solid rgba(233,221,11,0.4)", padding: 10, color: "white", textAlign: "center"}}>
                         <i style={{marginRight: 10, color: "orange"}} className="fa fa-bars"></i>
                         all services
                     </div>
-                    <p className="top-border"></p>
-                    <h1 className="section-title">Suggested Places</h1>
+                    <h1 className="section-title" style={{marginTop: "20px", marginBottom: 5}}>Suggested Places</h1>
                     <div className="homepage-favorite-services-list">
                         <a href=''>
                             <div className="homepage-each-favorite-service">
@@ -171,8 +172,8 @@ function Hero(){
                             </div>
                         </a>
                     </div>
-                    <p className="top-border"></p>
-                    <h1 style={{color: "orange", fontSize: "22px", fontFamily: 'Courgette', textAlign: "center", paddingBottom: 20}}>
+                    {/*<p className="top-border"></p>*/}
+                        <h1 style={{color: "orange", fontSize: "22px", fontFamily: 'Courgette', textAlign: "center", paddingBottom: 10, marginTop: 20}}>
                         What is Buku.com</h1>
                     <p style={{textAlign: "center", maxWidth: "400px", margin: "auto", fontFamily: 'Courgette', color: "white"}}>
                         Buku.com is a website and app that lets you find medical and beauty places near your location to book appointments.

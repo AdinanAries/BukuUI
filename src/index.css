@@ -147,6 +147,8 @@ footer {
   padding-top: 90px;
   width: 100vw;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 .hero-section-inner {
   background-color: #212c2c;
@@ -550,6 +552,19 @@ footer {
 .user-account-page-main-sections-each{
   width: calc(50% - 2px);
 }
+#hero_section_svg_bg{
+  z-index: 0;
+  opacity: 0.1;
+  background-image: url('./images/CalendarBg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 340px;
+  height: 391.5px;
+  position: absolute;
+  top: 100px;
+  right: 70px;
+  transform: rotate(25deg);
+}
 @media only screen and (max-width: 700px) {
   body {
     /*background-color: #212c2c;*/
@@ -559,6 +574,10 @@ footer {
   }
   .header-menu-new-button {
     display: none;
+  }
+  #hero_section_svg_bg{
+    width: 100vw;
+    right: 20px;
   }
   .logos-dotcom {
     display: none;
