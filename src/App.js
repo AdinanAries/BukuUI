@@ -10,12 +10,14 @@ import RegisterBusinessAllInputs from './components//registerBusinessPane';
 import AllServicesMenu from './components/allServiceMenu';
 import AppointmentsList from './components/appointmentsListContainer';
 import UserAccountContainer from './components/userAccountPage';
+import NotificationsContainer from './components/notificationsContainer';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <AllServicesMenu />
+        <NotificationsContainer />
         <RegisterBusinessAllInputs />
         <Header />
         <Route exact path="/" component={ Main } />

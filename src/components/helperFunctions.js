@@ -5,8 +5,14 @@ export function toggle_show_all_service(){
     document.getElementById("search_filters_main_container").style.display = "block";
 }
 
+export function toggle_show_notifications_container(){
+    $("#notifications_container").toggle("up");
+    document.getElementById("search_filters_main_container").style.display = "block";
+}
+
 export function hide_all_popups(){
     document.getElementById("all_services_menu_pane").style.display = "none";
+    document.getElementById("notifications_container").style.display = "none";
     $('html, body').animate({scrollTop:0}, '300');
 }
 

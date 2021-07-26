@@ -23,7 +23,7 @@ function UserAccountContainer(){
                         <div style={{padding: 10, marginTop: 10}}>
                             <p style={{color: "skyblue", textAlign: "center", fontSize: 14, fontWeight: "bolder"}}>
                                 <i style={{color: "orange", marginRight: 5}} className="fa fa-clock-o"></i>
-                                Next Appointment</p>
+                                Your Next Appointment</p>
                             <div style={{marginTop: 10, border: "1px solid rgba(255,255,255,0.3)", borderRadius: 10, backgroundColor: "rgba(0,0,0,0.3)", minHeight: 400}}>
 
                             </div>
