@@ -79,8 +79,6 @@ function UserAccountContainer(){
                                             <p style={{marginBottom: 15, textAlign: "right", fontSize: 13, color: "red", cursor: "pointer"}}>
                                                 Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-up"></i>
                                             </p>
-                                            <p style={{color: "pink", fontSize: 13, marginBottom: 15, textAlign: "center", fontWeight: "bolder"}}>
-                                                More</p>
                                             <p style={{color: "white", fontSize: 13, marginBottom: 10, paddingBottom: 5, textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-trash"></i>
                                                 Cancel Appointment</p>
