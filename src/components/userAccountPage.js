@@ -14,9 +14,15 @@ function UserAccountContainer(){
                                 <p style={{color: "white", fontWeight: "bolder"}}>Mohammed Adinan</p>
                                 <p style={{color: "orange", fontSize: 13, marginTop: 5}}>m.adinan@yahoo.com</p>
                                 <p style={{color: "orange", fontSize: 13}}>+1 (732) 799 9546</p>
-                                <div style={{marginTop: 10, textAlign: "center", color: "white", padding: 10, backgroundColor: "darkslateblue", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
-                                    <i style={{marginRight: 5, color: "gold"}} className="fa fa-pencil"></i>
-                                    Edit
+                                <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between"}}>
+                                    <div style={{width: "calc(50% - 1px)", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(204,0,204,0.2)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                        <i style={{marginRight: 5, color: "skyblue"}} className="fa fa-pencil"></i>
+                                        Edit Profile
+                                    </div>
+                                    <div style={{width: "calc(50% - 1px)",  textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(0,204,204,0.2)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                        <i style={{marginRight: 5, color: "skyblue"}} className="fa fa-cogs"></i>
+                                        Settings
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -60,19 +66,38 @@ function UserAccountContainer(){
                                 <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between"}}>
                                     <div style={{width: "33%", textAlign: "center", color: "skyblue", padding: 10, border: "1px solid rgba(255,255,255,0.2)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
                                         <i style={{marginRight: 5, color: "gold"}} className="fa fa-location-arrow"></i>
-                                        Path
+                                        Map
                                     </div>
-                                    <div style={{width: "33%", textAlign: "center", color: "white", padding: 10, backgroundColor: "rgba(65,123,22)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                    <div style={{width: "33%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(65,123,22,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
                                         <i style={{marginRight: 5, color: "gold"}} className="fa fa-pencil"></i>
-                                        Edit
+                                        Change
                                     </div>
-                                    <div style={{width: "33%",  textAlign: "center", color: "white", padding: 10, backgroundColor: "crimson", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
-                                        <i style={{marginRight: 5, color: "yellow"}} className="fa fa-trash"></i>
-                                        Cancel
+                                    <div style={{position: "relative", width: "33%",  textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(45,112,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                        <i style={{marginRight: 5, color: "yellow"}} className="fa fa-ellipsis-v"></i>
+                                        More
+                                        <div style={{padding: "10px 5px", width: 150, position: "absolute", top: -2, right: -2, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
+                                            <p style={{marginBottom: 15, textAlign: "right", fontSize: 13, color: "red", cursor: "pointer"}}>
+                                                Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-up"></i>
+                                            </p>
+                                            <p style={{color: "pink", fontSize: 13, marginBottom: 15, textAlign: "center", fontWeight: "bolder"}}>
+                                                More</p>
+                                            <p style={{color: "white", fontSize: 13, marginBottom: 10, paddingBottom: 5, textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                                <i style={{marginRight: 5, color: "gold"}} className="fa fa-trash"></i>
+                                                Cancel Appointment</p>
+                                            <p style={{color: "white", fontSize: 13, marginBottom: 10, paddingBottom: 5, textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                                <i style={{marginRight: 5, color: "gold"}} className="fa fa-phone"></i>
+                                                Call</p>
+                                            <p style={{color: "white", fontSize: 13, marginBottom: 5, paddingBottom: 5, textAlign: "left"}}>
+                                                <i style={{marginRight: 5, color: "gold"}} className="fa fa-eye"></i>
+                                                View Profile</p>
+                                        </div>
                                     </div>
+                                    
                                 </div>
                             </div>
-                        
+                        </div>
+                        <div style={{margin: "0 5px", marginBottom: 10, backgroundColor: "rgba(22,22,98,0.3)", border: "1px solid rgba(55,155,73,0.3)", padding: 10, textAlign: "center", color: "white", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                            see all appointments
                         </div>
                     </div>
                     <div className="user-account-page-main-sections-each" style={{padding: "10px 5px", marginTop: 10}}>
@@ -118,17 +143,13 @@ function UserAccountContainer(){
                                     </div>
                                 </div>
                                 <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between"}}>
-                                    <div style={{width: "33%", textAlign: "center", color: "skyblue", padding: 10, border: "1px solid rgba(255,255,255,0.2)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
-                                        <i style={{marginRight: 5, color: "gold"}} className="fa fa-location-arrow"></i>
-                                        Path
+                                    <div style={{width: "66.5%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(145,12,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                        <i style={{marginRight: 5, color: "gold"}} className="fa fa-star"></i>
+                                        Add Review
                                     </div>
-                                    <div style={{width: "33%", textAlign: "center", color: "white", padding: 10, backgroundColor: "rgba(65,123,22)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
-                                        <i style={{marginRight: 5, color: "gold"}} className="fa fa-pencil"></i>
-                                        Edit
-                                    </div>
-                                    <div style={{width: "33%",  textAlign: "center", color: "white", padding: 10, backgroundColor: "crimson", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
-                                        <i style={{marginRight: 5, color: "yellow"}} className="fa fa-trash"></i>
-                                        Cancel
+                                    <div style={{width: "33%",  textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(45,112,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                        <i style={{marginRight: 5, color: "yellow"}} className="fa fa-ellipsis-v"></i>
+                                        More
                                     </div>
                                 </div>
                             </div>
@@ -166,24 +187,19 @@ function UserAccountContainer(){
                                     </div>
                                 </div>
                                 <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between"}}>
-                                    <div style={{width: "33%", textAlign: "center", color: "skyblue", padding: 10, border: "1px solid rgba(255,255,255,0.2)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
-                                        <i style={{marginRight: 5, color: "gold"}} className="fa fa-location-arrow"></i>
-                                        Path
+                                    <div style={{width: "66.5%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(145,12,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                        <i style={{marginRight: 5, color: "gold"}} className="fa fa-star"></i>
+                                        Add Review
                                     </div>
-                                    <div style={{width: "33%", textAlign: "center", color: "white", padding: 10, backgroundColor: "rgba(65,123,22)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
-                                        <i style={{marginRight: 5, color: "gold"}} className="fa fa-pencil"></i>
-                                        Edit
-                                    </div>
-                                    <div style={{width: "33%",  textAlign: "center", color: "white", padding: 10, backgroundColor: "crimson", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
-                                        <i style={{marginRight: 5, color: "yellow"}} className="fa fa-trash"></i>
-                                        Cancel
+                                    <div style={{width: "33%",  textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(45,112,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                        <i style={{marginRight: 5, color: "yellow"}} className="fa fa-ellipsis-v"></i>
+                                        More
                                     </div>
                                 </div>
                             </div>
-                        
                         </div>
-                        <div style={{marginTop: 10, backgroundColor: "darkslateblue", padding: 10, textAlign: "center", color: "white", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
-                            Show More History
+                        <div style={{marginTop: 10, backgroundColor: "rgba(22,22,98,0.3)", border: "1px solid rgba(55,155,73,0.3)", padding: 10, textAlign: "center", color: "white", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                            see all history
                         </div>
                     </div>
                 </div>

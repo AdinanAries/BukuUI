@@ -503,7 +503,7 @@ footer {
   position: fixed;
   background-color: #212c2c;
   z-index: 4;
-  top: 90px;
+  top: 100px;
   overflow-y: auto;
   height: calc(100vh - 90px);
   width: 100%;
