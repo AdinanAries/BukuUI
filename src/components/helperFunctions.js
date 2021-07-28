@@ -48,3 +48,11 @@ export function refreshPageFunc(){
     $('html, body').animate({scrollTop:0}, '300');
     setTimeout("location.reload(true);", 310);
 }
+
+export function general_slideUp(elem_id){
+    $("#"+elem_id).slideUp("fast");
+}
+
+export function general_slideDown(elem_id){
+    $("#"+elem_id).slideDown("fast");
+}
