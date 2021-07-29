@@ -80,16 +80,16 @@ function UserAccountContainer(){
                                             More
                                         </div>
                                         <div id="usracc_next_appointment_more_menu" style={{display: "none", padding: "10px 5px", width: 200, position: "absolute", top: -2, right: -2, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
-                                            <p onClick={()=>{general_slideUp("usracc_next_appointment_more_menu")}} style={{marginBottom: 15, textAlign: "right", fontSize: 13, color: "red", cursor: "pointer"}}>
+                                            <p onClick={()=>{general_slideUp("usracc_next_appointment_more_menu")}} style={{marginBottom: 15, textAlign: "right", fontSize: 14, color: "red", cursor: "pointer"}}>
                                                 Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-up"></i>
                                             </p>
-                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-trash"></i>
                                                 Cancel Appointment</p>
-                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-phone"></i>
                                                 Call</p>
-                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left"}}>
+                                            <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-eye"></i>
                                                 View Profile</p>
                                         </div>
@@ -154,16 +154,16 @@ function UserAccountContainer(){
                                             More
                                         </div>
                                         <div id="usracc_appointment_history_more_menu_1" style={{display: "none", padding: "10px 5px", width: 200, position: "absolute", top: -2, right: -2, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
-                                            <p onClick={()=>{general_slideUp("usracc_appointment_history_more_menu_1")}} style={{marginBottom: 15, textAlign: "right", fontSize: 13, color: "red", cursor: "pointer"}}>
+                                            <p onClick={()=>{general_slideUp("usracc_appointment_history_more_menu_1")}} style={{marginBottom: 15, textAlign: "right", fontSize: 14, color: "red", cursor: "pointer"}}>
                                                 Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-up"></i>
                                             </p>
-                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-trash"></i>
                                                 Cancel Appointment</p>
-                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-phone"></i>
                                                 Call</p>
-                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left"}}>
+                                            <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-eye"></i>
                                                 View Profile</p>
                                         </div>
@@ -214,16 +214,16 @@ function UserAccountContainer(){
                                             More
                                         </div>
                                         <div id="usracc_appointment_history_more_menu_2" style={{display: "none", padding: "10px 5px", width: 200, position: "absolute", top: -2, right: -2, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
-                                            <p onClick={()=>{general_slideUp("usracc_appointment_history_more_menu_2")}} style={{marginBottom: 15, textAlign: "right", fontSize: 13, color: "red", cursor: "pointer"}}>
+                                            <p onClick={()=>{general_slideUp("usracc_appointment_history_more_menu_2")}} style={{marginBottom: 15, textAlign: "right", fontSize: 14, color: "red", cursor: "pointer"}}>
                                                 Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-up"></i>
                                             </p>
-                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-trash"></i>
                                                 Cancel Appointment</p>
-                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-phone"></i>
                                                 Call</p>
-                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left"}}>
+                                            <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-eye"></i>
                                                 View Profile</p>
                                         </div>

@@ -4,7 +4,7 @@ function AppSettingsPage(){
     return (
         <div style={{display: "none"}} id="app_settings_page">
             <div style={{position: "relative", borderTop: "1px solid white"}}>
-                <p onClick={close_app_settings_page} style={{position: "absolute", top: 0, right: 0, padding: 10, color: "red"}}>
+                <p onClick={close_app_settings_page} style={{position: "absolute", top: 0, right: 0, padding: 10, marginRight: 10, color: "red"}}>
                     <i className="fa fa-times"></i>
                 </p>
                 <div>
