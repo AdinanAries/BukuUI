@@ -1,5 +1,5 @@
 import { close_app_settings_page } from "./helperFunctions"
-
+//...
 function AppSettingsPage(){
     return (
         <div style={{display: "none"}} id="app_settings_page">
