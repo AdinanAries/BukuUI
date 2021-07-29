@@ -1,13 +1,15 @@
 import profilePic from "../images/profile_avatar.png";
 
+import { general_slideUp, general_slideDown } from "./helperFunctions";
+
 function AppointmentsList(){
     return (
         <div id="appointments_list_container">
             <div className="wrapper">
                 <div style={{maxWidth: 1000, margin: "auto", padding: 5}}>
                     <p style={{color: "orange", textAlign: "center", marginTop: 20, marginBottom: 20, fontSize: 14, fontWeight: "bolder"}}>Appointments</p>
-                    <div style={{marginTop: 10, border: "1px solid rgba(255,255,255,0.3)", borderRadius: 10, backgroundColor: "rgba(0,0,0,0.3)", minHeight: 400, overflow: "hidden"}}>
-                        <div style={{borderBottom: "1px solid rgba(255,255,255,0.3)", backgroundColor: "rgba(233,221,0,0.2)"}}>
+                    <div style={{marginTop: 10, paddingBottom: 10, border: "1px solid rgba(255,255,255,0.3)", borderRadius: 10, backgroundColor: "rgba(0,0,0,0.3)", minHeight: 400}}>
+                        <div style={{borderBottom: "1px solid rgba(255,255,255,0.3)", backgroundColor: "rgba(233,221,0,0.2)", borderTopLeftRadius: 10, borderTopRightRadius: 10}}>
                             <input readOnly style={{padding: 10, backgroundColor: "rgba(0,0,0,0.3)", marginRight: "10px", cursor: "pointer", color: "white", minWidth: 250, border: "none", fontWeight: "bolder", textAlign: "center", letterSpacing: "1px"}} type="text" value="March 24 - May 15"/>
                             <i style={{color: "orange"}} className="fa fa-caret-down"></i>
                         </div>
@@ -53,9 +55,25 @@ function AppointmentsList(){
                                     <i style={{marginRight: 5, color: "gold"}} className="fa fa-pencil"></i>
                                     Change
                                 </div>
-                                <div style={{width: "33%",  textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(45,112,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
-                                    <i style={{marginRight: 5, color: "yellow"}} className="fa fa-ellipsis-v"></i>
-                                    More
+                                <div style={{position: "relative", width: "33%",}}>
+                                    <div onClick={()=>{general_slideDown("main_appointment_more_menu_1")}} style={{textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(45,112,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                        <i style={{marginRight: 5, color: "yellow"}} className="fa fa-ellipsis-v"></i>
+                                        More
+                                    </div>
+                                    <div id="main_appointment_more_menu_1" style={{display: "none", padding: "10px 5px", width: 200, position: "absolute", top: -2, right: -2, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
+                                        <p onClick={()=>{general_slideUp("main_appointment_more_menu_1")}} style={{marginBottom: 15, textAlign: "right", fontSize: 13, color: "red", cursor: "pointer"}}>
+                                            Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-up"></i>
+                                        </p>
+                                        <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <i style={{marginRight: 5, color: "gold"}} className="fa fa-trash"></i>
+                                            Cancel Appointment</p>
+                                        <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <i style={{marginRight: 5, color: "gold"}} className="fa fa-phone"></i>
+                                            Call</p>
+                                        <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left"}}>
+                                            <i style={{marginRight: 5, color: "gold"}} className="fa fa-eye"></i>
+                                            View Profile</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -101,9 +119,25 @@ function AppointmentsList(){
                                     <i style={{marginRight: 5, color: "gold"}} className="fa fa-pencil"></i>
                                     Change
                                 </div>
-                                <div style={{width: "33%",  textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(45,112,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
-                                    <i style={{marginRight: 5, color: "yellow"}} className="fa fa-ellipsis-v"></i>
-                                    More
+                                <div style={{position: "relative", width: "33%",}}>
+                                    <div onClick={()=>{general_slideDown("main_appointment_more_menu_2")}} style={{textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(45,112,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                        <i style={{marginRight: 5, color: "yellow"}} className="fa fa-ellipsis-v"></i>
+                                        More
+                                    </div>
+                                    <div id="main_appointment_more_menu_2" style={{display: "none", padding: "10px 5px", width: 200, position: "absolute", top: -2, right: -2, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
+                                        <p onClick={()=>{general_slideUp("main_appointment_more_menu_2")}} style={{marginBottom: 15, textAlign: "right", fontSize: 13, color: "red", cursor: "pointer"}}>
+                                            Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-up"></i>
+                                        </p>
+                                        <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <i style={{marginRight: 5, color: "gold"}} className="fa fa-trash"></i>
+                                            Cancel Appointment</p>
+                                        <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <i style={{marginRight: 5, color: "gold"}} className="fa fa-phone"></i>
+                                            Call</p>
+                                        <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left"}}>
+                                            <i style={{marginRight: 5, color: "gold"}} className="fa fa-eye"></i>
+                                            View Profile</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

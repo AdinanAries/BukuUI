@@ -1,6 +1,6 @@
 import profilePic from "../images/profile_avatar.png"
 
-import { general_slideUp, general_slideDown } from "./helperFunctions";
+import { general_slideUp, general_slideDown, toggle_show_app_settings_page } from "./helperFunctions";
 
 function UserAccountContainer(){
     return (
@@ -21,7 +21,7 @@ function UserAccountContainer(){
                                         <i style={{marginRight: 5, color: "skyblue"}} className="fa fa-pencil"></i>
                                         Edit Profile
                                     </div>
-                                    <div style={{width: "calc(50% - 1px)",  textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(0,204,204,0.2)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                    <div onClick={toggle_show_app_settings_page} style={{width: "calc(50% - 1px)",  textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(0,204,204,0.2)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
                                         <i style={{marginRight: 5, color: "skyblue"}} className="fa fa-cogs"></i>
                                         Settings
                                     </div>
@@ -79,17 +79,17 @@ function UserAccountContainer(){
                                             <i style={{marginRight: 5, color: "yellow"}} className="fa fa-ellipsis-v"></i>
                                             More
                                         </div>
-                                        <div id="usracc_next_appointment_more_menu" style={{display: "none", padding: "10px 5px", width: 150, position: "absolute", top: -2, right: -2, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
+                                        <div id="usracc_next_appointment_more_menu" style={{display: "none", padding: "10px 5px", width: 200, position: "absolute", top: -2, right: -2, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
                                             <p onClick={()=>{general_slideUp("usracc_next_appointment_more_menu")}} style={{marginBottom: 15, textAlign: "right", fontSize: 13, color: "red", cursor: "pointer"}}>
                                                 Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-up"></i>
                                             </p>
-                                            <p style={{color: "white", fontSize: 13, marginBottom: 10, paddingBottom: 5, textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-trash"></i>
                                                 Cancel Appointment</p>
-                                            <p style={{color: "white", fontSize: 13, marginBottom: 10, paddingBottom: 5, textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-phone"></i>
                                                 Call</p>
-                                            <p style={{color: "white", fontSize: 13, marginBottom: 5, paddingBottom: 5, textAlign: "left"}}>
+                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-eye"></i>
                                                 View Profile</p>
                                         </div>
@@ -153,17 +153,17 @@ function UserAccountContainer(){
                                             <i style={{marginRight: 5, color: "yellow"}} className="fa fa-ellipsis-v"></i>
                                             More
                                         </div>
-                                        <div id="usracc_appointment_history_more_menu_1" style={{display: "none", padding: "10px 5px", width: 150, position: "absolute", top: -2, right: -2, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
+                                        <div id="usracc_appointment_history_more_menu_1" style={{display: "none", padding: "10px 5px", width: 200, position: "absolute", top: -2, right: -2, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
                                             <p onClick={()=>{general_slideUp("usracc_appointment_history_more_menu_1")}} style={{marginBottom: 15, textAlign: "right", fontSize: 13, color: "red", cursor: "pointer"}}>
                                                 Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-up"></i>
                                             </p>
-                                            <p style={{color: "white", fontSize: 13, marginBottom: 10, paddingBottom: 5, textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-trash"></i>
                                                 Cancel Appointment</p>
-                                            <p style={{color: "white", fontSize: 13, marginBottom: 10, paddingBottom: 5, textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-phone"></i>
                                                 Call</p>
-                                            <p style={{color: "white", fontSize: 13, marginBottom: 5, paddingBottom: 5, textAlign: "left"}}>
+                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-eye"></i>
                                                 View Profile</p>
                                         </div>
@@ -213,17 +213,17 @@ function UserAccountContainer(){
                                             <i style={{marginRight: 5, color: "yellow"}} className="fa fa-ellipsis-v"></i>
                                             More
                                         </div>
-                                        <div id="usracc_appointment_history_more_menu_2" style={{display: "none", padding: "10px 5px", width: 150, position: "absolute", top: -2, right: -2, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
+                                        <div id="usracc_appointment_history_more_menu_2" style={{display: "none", padding: "10px 5px", width: 200, position: "absolute", top: -2, right: -2, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
                                             <p onClick={()=>{general_slideUp("usracc_appointment_history_more_menu_2")}} style={{marginBottom: 15, textAlign: "right", fontSize: 13, color: "red", cursor: "pointer"}}>
                                                 Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-up"></i>
                                             </p>
-                                            <p style={{color: "white", fontSize: 13, marginBottom: 10, paddingBottom: 5, textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-trash"></i>
                                                 Cancel Appointment</p>
-                                            <p style={{color: "white", fontSize: 13, marginBottom: 10, paddingBottom: 5, textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-phone"></i>
                                                 Call</p>
-                                            <p style={{color: "white", fontSize: 13, marginBottom: 5, paddingBottom: 5, textAlign: "left"}}>
+                                            <p style={{color: "white", fontSize: 13, padding: "10px 0", textAlign: "left"}}>
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-eye"></i>
                                                 View Profile</p>
                                         </div>

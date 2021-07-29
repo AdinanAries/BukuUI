@@ -3,7 +3,7 @@ function NotificationsContainer(){
         <div style={{display: "none"}} id="notifications_container">
             <div className="wrapper">
                 <div style={{maxWidth: 700, margin: "auto"}}>
-                    <p style={{color: "orange", textAlign: "center", marginTop: 10, marginBottom: 20, fontSize: 14, fontWeight: "bolder"}}>Notifications</p>
+                    <p style={{color: "orange", textAlign: "center", marginTop: 20, marginBottom: 20, fontSize: 14, fontWeight: "bolder"}}>Notifications</p>
                     <div id="user_notifications_list">
                         <div style={{display: "flex", flexDirection: "row !important", justifyContent: "space-between", padding: "10px 5px", backgroundColor: "rgba(3,25,55,0.4)", marginBottom: 5}}>
                             <div style={{width: 40, height: 40, borderRadius: "100%", backgroundColor: "darkgrey"}}></div>

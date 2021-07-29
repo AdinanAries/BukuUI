@@ -499,11 +499,11 @@ footer {
   width: 100%;
   overflow-y: auto;
 }
-#notifications_container{
+#notifications_container, #app_settings_page{
   position: fixed;
   background-color: #212c2c;
   z-index: 4;
-  top: 100px;
+  top: 90px;
   overflow-y: auto;
   height: calc(100vh - 90px);
   width: 100%;

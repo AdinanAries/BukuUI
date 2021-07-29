@@ -11,11 +11,13 @@ import AllServicesMenu from './components/allServiceMenu';
 import AppointmentsList from './components/appointmentsListContainer';
 import UserAccountContainer from './components/userAccountPage';
 import NotificationsContainer from './components/notificationsContainer';
+import AppSettingsPage from './components/appSettingsPage';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <AppSettingsPage />
         <AllServicesMenu />
         <NotificationsContainer />
         <RegisterBusinessAllInputs />

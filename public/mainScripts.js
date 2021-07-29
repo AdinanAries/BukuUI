@@ -7,7 +7,9 @@ $(window).scroll(function() {
         if(document.getElementById("all_services_menu_pane").style.display != "none"){
             // do not hide filters
         }else if(document.getElementById("notifications_container").style.display != "none"){
-            // do not hide filters
+            // do not hide filters 
+        }else if(document.getElementById("app_settings_page").style.display != "none"){
+            // do not hide filters app_settings_page
         }else{
             $("#search_filters_main_container").slideUp("fast");
         }
