@@ -1,6 +1,6 @@
 import profilePic from "../images/profile_avatar.png"
 
-import { general_slideUp, general_slideDown, toggle_show_app_settings_page } from "./helperFunctions";
+import { general_slideUp, general_slideDown, toggle_show_app_settings_page, toggle_show_edit_user_profile_page } from "./helperFunctions";
 
 function UserAccountContainer(){
     return (
@@ -17,7 +17,7 @@ function UserAccountContainer(){
                                 <p style={{color: "orange", fontSize: 13, marginTop: 5}}>m.adinan@yahoo.com</p>
                                 <p style={{color: "orange", fontSize: 13}}>+1 (732) 799 9546</p>
                                 <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between"}}>
-                                    <div style={{width: "calc(50% - 1px)", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(204,0,204,0.2)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                    <div onClick={toggle_show_edit_user_profile_page} style={{width: "calc(50% - 1px)", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(204,0,204,0.2)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
                                         <i style={{marginRight: 5, color: "skyblue"}} className="fa fa-pencil"></i>
                                         Edit Profile
                                     </div>
@@ -65,7 +65,7 @@ function UserAccountContainer(){
                                             +1 (732) 799 9546</p>
                                     </div>
                                 </div>
-                                <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between"}}>
+                                <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between", position: "relative"}}>
                                     <div style={{width: "33%", textAlign: "center", color: "skyblue", padding: 10, border: "1px solid rgba(255,255,255,0.2)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
                                         <i style={{marginRight: 5, color: "gold"}} className="fa fa-location-arrow"></i>
                                         Map
@@ -93,6 +93,21 @@ function UserAccountContainer(){
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-eye"></i>
                                                 View Profile</p>
                                         </div>
+                                    </div>
+                                    <div style={{position: "absolute", bottom: -1, left: -1, width: "100%", padding: 10, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
+                                            <p style={{marginBottom: 15, textAlign: "right", fontSize: 14, color: "red", cursor: "pointer"}}>
+                                                Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-up"></i>
+                                            </p>
+                                            <p style={{color: "skyblue", fontSize: 13, textAlign: "center", marginBottom: 10}}>What do you want to do?</p>
+                                            <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                                <i style={{marginRight: 5, color: "gold"}} className="fa fa-clock-o"></i>
+                                                Reschedule</p>
+                                            <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
+                                                <i style={{marginRight: 5, color: "gold"}} className="fa fa-bars"></i>
+                                                Change Service</p>
+                                            <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left"}}>
+                                                <i style={{marginRight: 5, color: "gold"}} className="fa fa-trash"></i>
+                                                Cancel Appointment</p>
                                     </div>
                                 </div>
                             </div>

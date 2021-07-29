@@ -12,11 +12,13 @@ import AppointmentsList from './components/appointmentsListContainer';
 import UserAccountContainer from './components/userAccountPage';
 import NotificationsContainer from './components/notificationsContainer';
 import AppSettingsPage from './components/appSettingsPage';
+import EditUserProfile from './components/editProfile';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <EditUserProfile />
         <AppSettingsPage />
         <AllServicesMenu />
         <NotificationsContainer />

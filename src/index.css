@@ -499,7 +499,7 @@ footer {
   width: 100%;
   overflow-y: auto;
 }
-#notifications_container, #app_settings_page{
+#notifications_container, #app_settings_page, #edit_user_profile_page{
   position: fixed;
   background-color: #212c2c;
   z-index: 4;

@@ -12,6 +12,7 @@ export function toggle_show_all_service(){
     document.getElementById("search_filters_main_container").style.display = "block";
     document.getElementById("notifications_container").style.display = "none";
     document.getElementById("app_settings_page").style.display = "none";
+    document.getElementById("edit_user_profile_page").style.display = "none";
     document.getElementById("main_menu_notifications_option").classList.remove("active");
     document.getElementById("top_main_menu_notifications_option").classList.remove("active");
 }
@@ -28,6 +29,7 @@ export function toggle_show_notifications_container(){
     document.getElementById("search_filters_main_container").style.display = "block";
     document.getElementById("all_services_menu_pane").style.display = "none";
     document.getElementById("app_settings_page").style.display = "none";
+    document.getElementById("edit_user_profile_page").style.display = "none";
     document.getElementById("top_main_menu_all_services_option").classList.remove("active");
     document.getElementById("main_menu_all_services_option").classList.remove("active");
 }
@@ -37,10 +39,23 @@ export function toggle_show_app_settings_page(){
     document.getElementById("search_filters_main_container").style.display = "block";
     document.getElementById("all_services_menu_pane").style.display = "none";
     document.getElementById("notifications_container").style.display = "none";
+    document.getElementById("edit_user_profile_page").style.display = "none";
 }
 
 export function close_app_settings_page(){
     $("#app_settings_page").toggle("up");
+}
+
+export function toggle_show_edit_user_profile_page(){
+    $("#edit_user_profile_page").toggle("up");
+    document.getElementById("search_filters_main_container").style.display = "block";
+    document.getElementById("all_services_menu_pane").style.display = "none";
+    document.getElementById("app_settings_page").style.display = "none";
+    document.getElementById("notifications_container").style.display = "none";
+}
+
+export function close_edit_user_profile_page(){
+    $("#edit_user_profile_page").toggle("up");
 }
 
 export function hide_all_popups(elem_id){
@@ -48,6 +63,7 @@ export function hide_all_popups(elem_id){
     document.getElementById("app_settings_page").style.display = "none";
     document.getElementById("all_services_menu_pane").style.display = "none";
     document.getElementById("notifications_container").style.display = "none";
+    document.getElementById("edit_user_profile_page").style.display = "none";
     $('html, body').animate({scrollTop:0}, '300');
 }
 
