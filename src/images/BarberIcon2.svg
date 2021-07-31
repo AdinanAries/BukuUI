@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="white" enable-background="new 0 0 32 32" viewBox="0 0 32 32">
+<path d="M11 22.8V23h0C11 22.9 11 22.9 11 22.8zM21 23L21 23l0-.2C21 22.9 21 22.9 21 23zM21 9c0 .1 0 .1 0 .2L21 9 21 9zM11 9v.2C11 9.1 11 9.1 11 9L11 9zM11 9c0 .1 0 .1 0 .2L11 9 11 9zM21 9v.2C21 9.1 21 9.1 21 9L21 9zM11 23L11 23l0-.2C11 22.9 11 22.9 11 23zM21 22.8V23h0C21 22.9 21 22.9 21 22.8z"/>
+<path fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" d="M14.5 2.8c.5-.2 1-.3 1.5-.3 2.3 0 4.2 1.8 4.5 4M11.5 6.5c.1-1.1.7-2.1 1.5-2.8M18.5 28.7c-.7.5-1.6.8-2.5.8-2.3 0-4.2-1.8-4.5-4M20.5 25.5c-.1.8-.4 1.6-.9 2.3"/>
+<rect width="9" height="15" x="11.5" y="8.5" fill="none" stroke="white" stroke-miterlimit="10"/>
+<path fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" d="M19 6.5h3.5c.5 0 1 .5 1 1s-.5 1-1 1h-13c-.5 0-1-.5-1-1s.5-1 1-1H16M13 25.5H9.5c-.5 0-1-.5-1-1s.5-1 1-1h13c.5 0 1 .5 1 1s-.5 1-1 1H16"/>
+<line x1="20.5" x2="11.5" y1="12.5" y2="21.5" fill="none" stroke="white" stroke-miterlimit="10"/>
+<line x1="20.5" x2="13.5" y1="16.5" y2="23.5" fill="none" stroke="white" stroke-miterlimit="10"/>
+<line x1="20.5" x2="17.5" y1="20.5" y2="23.5" fill="none" stroke="white" stroke-miterlimit="10"/>
+<line x1="20.5" x2="11.5" y1="8.5" y2="17.5" fill="none" stroke="white" stroke-miterlimit="10"/>
+<line x1="16.5" x2="11.5" y1="8.5" y2="13.5" fill="none" stroke="white" stroke-miterlimit="10"/>
+<circle cx="13.5" cy="17.5" r=".5"/>
+<circle cx="17.5" cy="6.5" r=".5"/>
+<circle cx="12.5" cy="10.5" r=".5"/>
+<circle cx="13.5" cy="9.5" r=".5"/>
+<circle cx="12.5" cy="18.5" r=".5"/>
+<circle cx="16.5" cy="22.5" r=".5"/>
+<circle cx="14.5" cy="25.5" r=".5"/>
+<circle cx="17.5" cy="21.5" r=".5"/>
+<circle cx="18.5" cy="20.5" r=".5"/>
+<circle cx="19.5" cy="19.5" r=".5"/>
+<circle cx="14.5" cy="16.5" r=".5"/>
+<circle cx="15.5" cy="15.5" r=".5"/>
+<circle cx="16.5" cy="14.5" r=".5"/>
+<circle cx="17.5" cy="13.5" r=".5"/>
+<circle cx="18.5" cy="12.5" r=".5"/>
+<circle cx="19.5" cy="11.5"  r=".5"/></svg>
