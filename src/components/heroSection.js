@@ -10,9 +10,11 @@ import favsProPIc from '../images/ProfilePic17.png';
 
 import AboutBuku from './aboutBukuSection';
 
-function toggle_show_all_service(){
+/*function toggle_show_all_service(){
     $("#all_services_menu_pane").toggle("up");
-}
+}*/
+
+import {toggle_show_all_service} from "./helperFunctions";
 
 function Hero(){
     return (

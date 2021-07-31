@@ -519,7 +519,7 @@ footer {
   cursor: pointer;
 }
 .all_service_each_category_item:hover {
-  background-color: rgb(255, 188, 149);
+  background-color: rgba(84,0,192);
 }
 #mobile_bottom_nav {
   display: none;

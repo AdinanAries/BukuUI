@@ -70,7 +70,7 @@ function UserAccountContainer(){
                                         <i style={{marginRight: 5, color: "gold"}} className="fa fa-location-arrow"></i>
                                         Map
                                     </div>
-                                    <div style={{width: "33%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(65,123,22,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                    <div onClick={()=>{general_slideDown("usracc_edit_appointment_sub_menu")}} style={{width: "33%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(65,123,22,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
                                         <i style={{marginRight: 5, color: "gold"}} className="fa fa-pencil"></i>
                                         Change
                                     </div>
@@ -94,9 +94,9 @@ function UserAccountContainer(){
                                                 View Profile</p>
                                         </div>
                                     </div>
-                                    <div style={{position: "absolute", bottom: -1, left: -1, width: "100%", padding: 10, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
-                                            <p style={{marginBottom: 15, textAlign: "right", fontSize: 14, color: "red", cursor: "pointer"}}>
-                                                Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-up"></i>
+                                    <div id="usracc_edit_appointment_sub_menu" style={{display: "none", position: "absolute", bottom: -1, left: -1, width: "100%", padding: 10, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
+                                            <p onClick={()=>{general_slideUp("usracc_edit_appointment_sub_menu")}} style={{marginBottom: 15, textAlign: "right", fontSize: 14, color: "red", cursor: "pointer"}}>
+                                                Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-down"></i>
                                             </p>
                                             <p style={{color: "skyblue", fontSize: 13, textAlign: "center", marginBottom: 10}}>What do you want to do?</p>
                                             <p style={{color: "white", fontSize: 14, padding: "10px 0", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.3)"}}>
