@@ -8,7 +8,7 @@ import spaIcon2 from "../images/SpaIcon2.svg";
 import DentistIcon from "../images/DentistIcon2.svg";
 import DentistIcon2 from "../images/DentistIcon1.svg";
 
-
+///
 function toggle_show_all_service(){
     $("#all_services_menu_pane").toggle("up");
     document.getElementById("main_menu_all_services_option").classList.remove("active");
@@ -110,7 +110,7 @@ function AllServicesMenu(){
                             Dentist
                         </p>
                         <div style={{display: "flex", flexDirection: "row !important", justifyContent: "center"}}>
-                            <div style={{backgroundImage: "url("+DentistIcon+")", width: 64, height: 60, marginLeft: -5, marginTop: 5, backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
+                            <div style={{backgroundImage: "url("+DentistIcon+")", width: 63.5, height: 60, marginLeft: -5, marginTop: 5, backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
                             </div>
                             <div style={{backgroundImage: "url("+DentistIcon2+")", width: 60, height: 60, marginLeft: -15, marginTop: 10, transform: "rotate(20deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
                             </div>
