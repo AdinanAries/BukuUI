@@ -584,6 +584,35 @@ function SearchResultsPage(){
                                                 </div>
                                             </div>
                                         <div id="booking_workflow_main_container" style={{display: "none"}}>
+                                            <div style={{display: "flex", flexDirection: "row !important", justifyContent: "space-between", padding: "0 10px", margin: "15px 0"}}>
+                                                <div style={{width: "calc(25% - 8px)", borderBottom: "4px solid rgba(255,255,255,0.4)", position: "relative", height: 50, marginBottom: 10}}>
+                                                    <p style={{textAlign: "center", color: "pink", padding: 5, fontSize: 13}}>Service</p>
+                                                    <div style={{borderRadius: "100%", fontWeight: "bolder", width: 40, height: 40, border: "4px solid rgba(255,255,255,0.4)", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", position: "absolute", bottom: -20, left: 0, backgroundColor: "rgb(95,0,95)", color: "white"}}>
+                                                        1
+                                                    </div>
+                                                </div>
+                                                <div style={{width: "calc(25% - 8px)", borderBottom: "4px solid rgba(255,255,255,0.4)", position: "relative", height: 50, marginBottom: 10}}>
+                                                    <p style={{textAlign: "center", color: "pink", padding: 5, fontSize: 13}}>Account</p>
+                                                    <div style={{borderRadius: "100%", fontWeight: "bolder", width: 40, height: 40, border: "4px solid rgba(255,255,255,0.4)", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", position: "absolute", bottom: -20, left: 0, backgroundColor: "rgb(95,0,95)", color: "white"}}>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div style={{width: "calc(25% - 8px)", borderBottom: "4px solid rgba(255,255,255,0.4)", position: "relative", height: 50, marginBottom: 10}}>
+                                                    <p style={{textAlign: "center", color: "pink", padding: 5, fontSize: 13}}>User</p>
+                                                    <div style={{borderRadius: "100%", fontWeight: "bolder", width: 40, height: 40, border: "4px solid rgba(255,255,255,0.4)", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", position: "absolute", bottom: -20, left: 0, backgroundColor: "rgb(95,0,95)", color: "white"}}>
+                                                        3
+                                                    </div>
+                                                </div>
+                                                <div style={{width: "calc(25% + 24px)", borderBottom: "4px solid rgba(255,255,255,0.4)", position: "relative", height: 50, marginBottom: 10}}>
+                                                    <p style={{textAlign: "center", color: "pink", padding: 5, fontSize: 13}}>Payment</p>
+                                                    <div style={{borderRadius: "100%", fontWeight: "bolder", width: 40, height: 40, border: "4px solid rgba(255,255,255,0.4)", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", position: "absolute", bottom: -20, left: 0, backgroundColor: "rgb(95,0,95)", color: "white"}}>
+                                                        4
+                                                    </div>
+                                                    <div style={{borderRadius: "100%", fontWeight: "bolder", width: 30, height: 30, border: "4px solid rgba(255,255,255,0.4)", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", position: "absolute", bottom: -15, right: 0, backgroundColor: "rgb(95,95,0)", color: "white"}}>
+                                                        <i style={{color: "lightgreen"}} class="fa fa-check"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div id="booking_select_service_pane" style={{padding: 10}}>
                                                 <p onClick={back_to_select_time_spot} style={{color: "white", width: "fit-content", cursor: "pointer", padding: 10}}>
                                                     <i style={{color: "rgb(201,193,221)", marginRight: 10}} className="fa fa-arrow-left"></i>
