@@ -585,9 +585,9 @@ function SearchResultsPage(){
                                             </div>
                                         <div id="booking_workflow_main_container" style={{display: "none"}}>
                                             <div style={{display: "flex", flexDirection: "row !important", justifyContent: "space-between", padding: "0 10px", margin: "15px 0"}}>
-                                                <div style={{width: "calc(25% - 8px)", borderBottom: "4px solid rgba(255,255,255,0.4)", position: "relative", height: 50, marginBottom: 10}}>
+                                                <div style={{width: "calc(25% - 8px)", borderBottom: "4px solid orange", position: "relative", height: 50, marginBottom: 10}}>
                                                     <p style={{textAlign: "center", color: "pink", padding: 5, fontSize: 13}}>Service</p>
-                                                    <div style={{borderRadius: "100%", fontWeight: "bolder", width: 40, height: 40, border: "4px solid rgba(255,255,255,0.4)", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", position: "absolute", bottom: -20, left: 0, backgroundColor: "rgb(95,0,95)", color: "white"}}>
+                                                    <div style={{borderRadius: "100%", fontWeight: "bolder", width: 40, height: 40, border: "4px solid orange", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", position: "absolute", bottom: -20, left: 0, backgroundColor: "rgb(55,0,55)", color: "orange"}}>
                                                         1
                                                     </div>
                                                 </div>
