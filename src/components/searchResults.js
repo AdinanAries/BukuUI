@@ -12,6 +12,24 @@ import $ from "jquery"
 
 let selected_booking_user_id_option = "";
 
+function make_step_indicator_active(number){
+    document.getElementById("workflow_step_"+number).classList.add("active");
+    document.getElementById("workflow_step_"+number+"_number").classList.add("active");
+}
+
+function make_step_indicator_final_step_active(){
+    document.getElementById("workflow_last_step_number").classList.add("active");
+}
+
+function make_step_indicator_final_step_inactive(){
+    document.getElementById("workflow_last_step_number").classList.remove("active");
+}
+
+function make_step_indicator_inactive(number){
+    document.getElementById("workflow_step_"+number).classList.remove("active");
+    document.getElementById("workflow_step_"+number+"_number").classList.remove("active");
+}
+
 function show_booking_select_service_pane(){
     if($(document).width() > 700){
         $("#booking_select_time_spot").toggle("up");
@@ -27,6 +45,7 @@ function back_to_select_time_spot(){
     $("#booking_workflow_main_container").toggle("up");
 }
 function show_booking_select_user_option(){
+    make_step_indicator_active(2);
     $("#booking_select_service_pane").toggle("up");
     $("#booking_select_user_option").toggle("up");
     if($(document).width() > 700){
@@ -34,6 +53,7 @@ function show_booking_select_user_option(){
     }
 }
 function back_to_select_service_pane(){
+    make_step_indicator_inactive(2);
     $("#booking_select_service_pane").toggle("up");
     $("#booking_select_user_option").toggle("up");
     if($(document).width() > 700){
@@ -41,6 +61,7 @@ function back_to_select_service_pane(){
     }
 }
 function show_booking_user_signup_form(){
+    make_step_indicator_active(3);
     selected_booking_user_id_option = "signup";
     $("#booking_user_signup_form").toggle("up");
     $("#booking_select_user_option").toggle("up");
@@ -49,6 +70,7 @@ function show_booking_user_signup_form(){
     }
 }
 function back_to_select_user_option_from_signup(){
+    make_step_indicator_inactive(3);
     $("#booking_user_signup_form").toggle("up");
     $("#booking_select_user_option").toggle("up");
     if($(document).width() > 700){
@@ -56,6 +78,7 @@ function back_to_select_user_option_from_signup(){
     }
 }
 function show_booking_user_login_form(){
+    make_step_indicator_active(3);
     selected_booking_user_id_option = "login";
     $("#booking_user_login_form").toggle("up");
     $("#booking_select_user_option").toggle("up");
@@ -64,6 +87,7 @@ function show_booking_user_login_form(){
     }
 }
 function back_to_select_user_option_from_login(){
+    make_step_indicator_inactive(3);
     $("#booking_user_login_form").toggle("up");
     $("#booking_select_user_option").toggle("up");
     if($(document).width() > 700){
@@ -71,6 +95,7 @@ function back_to_select_user_option_from_login(){
     }
 }
 function show_booking_user_anony_form(){
+    make_step_indicator_active(3);
     selected_booking_user_id_option = "anonymous"
     $("#booking_user_anony_form").toggle("up");
     $("#booking_select_user_option").toggle("up");
@@ -79,6 +104,7 @@ function show_booking_user_anony_form(){
     }
 }
 function back_to_select_user_option_from_anony(){
+    make_step_indicator_inactive(3);
     $("#booking_user_anony_form").toggle("up");
     $("#booking_select_user_option").toggle("up");
     if($(document).width() > 700){
@@ -86,6 +112,7 @@ function back_to_select_user_option_from_anony(){
     }
 }
 function show_booking_select_cash_or_card_payments(){
+    make_step_indicator_active(4);
     $("#booking_select_cash_or_card_payments").toggle("up");
     if(selected_booking_user_id_option === "login"){
         $("#booking_user_login_form").toggle("up");
@@ -98,6 +125,22 @@ function show_booking_select_cash_or_card_payments(){
         $('html, body').animate({scrollTop:0}, '300');
     }
 }
+
+function back_from_select_cash_or_card_payments(){
+    make_step_indicator_inactive(4)
+    $("#booking_select_cash_or_card_payments").toggle("up");
+    if(selected_booking_user_id_option === "login"){
+        $("#booking_user_login_form").toggle("up");
+    }else if(selected_booking_user_id_option === "signup"){
+        $("#booking_user_signup_form").toggle("up");
+    }else if(selected_booking_user_id_option === "anonymous"){
+        $("#booking_user_anony_form").toggle("up");
+    }
+    if($(document).width() > 700){
+        $('html, body').animate({scrollTop:0}, '300');
+    }
+}
+
 function submit_booking_user_signup(){
     show_booking_select_cash_or_card_payments();
 }
@@ -108,6 +151,7 @@ function submit_anonymous_user_info(){
     show_booking_select_cash_or_card_payments();
 }
 function show_booking_final_submission_pane(){
+    make_step_indicator_final_step_active();
     $("#booking_final_submission_pane").toggle("up");
     $("#booking_select_cash_or_card_payments").toggle("up");
     if($(document).width() > 700){
@@ -115,6 +159,7 @@ function show_booking_final_submission_pane(){
     }
 }
 function back_to_booking_select_card_cash_payments_form(){
+    make_step_indicator_final_step_inactive();
     $("#booking_final_submission_pane").toggle("up");
     $("#booking_select_cash_or_card_payments").toggle("up");
     if($(document).width() > 700){
@@ -584,31 +629,31 @@ function SearchResultsPage(){
                                                 </div>
                                             </div>
                                         <div id="booking_workflow_main_container" style={{display: "none"}}>
-                                            <div style={{display: "flex", flexDirection: "row !important", justifyContent: "space-between", padding: "0 10px", margin: "15px 0"}}>
-                                                <div style={{width: "calc(25% - 8px)", borderBottom: "4px solid orange", position: "relative", height: 50, marginBottom: 10}}>
+                                            <div className="booking_workflow_steps_indicator">
+                                                <div id="workflow_step_1" className="booking_workflow_steps_each_indicator active" style={{width: "calc(25% - 8px)"}}>
                                                     <p style={{textAlign: "center", color: "pink", padding: 5, fontSize: 13}}>Service</p>
-                                                    <div style={{borderRadius: "100%", fontWeight: "bolder", width: 40, height: 40, border: "4px solid orange", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", position: "absolute", bottom: -20, left: 0, backgroundColor: "rgb(55,0,55)", color: "orange"}}>
+                                                    <div id="workflow_step_1_number" className="booking_workflow_steps_each_indicator_number active">
                                                         1
                                                     </div>
                                                 </div>
-                                                <div style={{width: "calc(25% - 8px)", borderBottom: "4px solid rgba(255,255,255,0.4)", position: "relative", height: 50, marginBottom: 10}}>
+                                                <div id="workflow_step_2" className="booking_workflow_steps_each_indicator" style={{width: "calc(25% - 8px)"}}>
                                                     <p style={{textAlign: "center", color: "pink", padding: 5, fontSize: 13}}>Account</p>
-                                                    <div style={{borderRadius: "100%", fontWeight: "bolder", width: 40, height: 40, border: "4px solid rgba(255,255,255,0.4)", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", position: "absolute", bottom: -20, left: 0, backgroundColor: "rgb(95,0,95)", color: "white"}}>
+                                                    <div id="workflow_step_2_number" className="booking_workflow_steps_each_indicator_number">
                                                         2
                                                     </div>
                                                 </div>
-                                                <div style={{width: "calc(25% - 8px)", borderBottom: "4px solid rgba(255,255,255,0.4)", position: "relative", height: 50, marginBottom: 10}}>
+                                                <div id="workflow_step_3" className="booking_workflow_steps_each_indicator" style={{width: "calc(25% - 8px)"}}>
                                                     <p style={{textAlign: "center", color: "pink", padding: 5, fontSize: 13}}>User</p>
-                                                    <div style={{borderRadius: "100%", fontWeight: "bolder", width: 40, height: 40, border: "4px solid rgba(255,255,255,0.4)", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", position: "absolute", bottom: -20, left: 0, backgroundColor: "rgb(95,0,95)", color: "white"}}>
+                                                    <div id="workflow_step_3_number" className="booking_workflow_steps_each_indicator_number">
                                                         3
                                                     </div>
                                                 </div>
-                                                <div style={{width: "calc(25% + 24px)", borderBottom: "4px solid rgba(255,255,255,0.4)", position: "relative", height: 50, marginBottom: 10}}>
+                                                <div id="workflow_step_4" className="booking_workflow_steps_each_indicator" style={{width: "calc(25% + 24px)"}}>
                                                     <p style={{textAlign: "center", color: "pink", padding: 5, fontSize: 13}}>Payment</p>
-                                                    <div style={{borderRadius: "100%", fontWeight: "bolder", width: 40, height: 40, border: "4px solid rgba(255,255,255,0.4)", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", position: "absolute", bottom: -20, left: 0, backgroundColor: "rgb(95,0,95)", color: "white"}}>
+                                                    <div id="workflow_step_4_number" className="booking_workflow_steps_each_indicator_number">
                                                         4
                                                     </div>
-                                                    <div style={{borderRadius: "100%", fontWeight: "bolder", width: 30, height: 30, border: "4px solid rgba(255,255,255,0.4)", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", position: "absolute", bottom: -15, right: 0, backgroundColor: "rgb(95,95,0)", color: "white"}}>
+                                                    <div id="workflow_last_step_number"  className="workflow_last_step_number">
                                                         <i style={{color: "lightgreen"}} class="fa fa-check"></i>
                                                     </div>
                                                 </div>
@@ -887,7 +932,7 @@ function SearchResultsPage(){
                                                 </div>
                                             </div>
                                             <div id="booking_select_cash_or_card_payments" style={{padding: 10, display: "none"}}>
-                                                <p onClick={show_booking_select_cash_or_card_payments} style={{color: "white", width: "fit-content", cursor: "pointer", padding: 10}}>
+                                                <p onClick={back_from_select_cash_or_card_payments} style={{color: "white", width: "fit-content", cursor: "pointer", padding: 10}}>
                                                     <i style={{color: "rgb(201,193,221)", marginRight: 10}} className="fa fa-arrow-left"></i>
                                                     Go Back</p>
                                                 <div>

@@ -499,7 +499,9 @@ footer {
   width: 100%;
   overflow-y: auto;
 }
-#notifications_container, #app_settings_page, #edit_user_profile_page{
+#notifications_container,
+#app_settings_page,
+#edit_user_profile_page {
   position: fixed;
   background-color: #212c2c;
   z-index: 4;
@@ -519,7 +521,7 @@ footer {
   cursor: pointer;
 }
 .all_service_each_category_item:hover {
-  background-color: rgba(84,0,192);
+  background-color: rgba(84, 0, 192);
 }
 #mobile_bottom_nav {
   display: none;
@@ -532,36 +534,36 @@ footer {
   width: 100%;
   border-top: 1px solid rgba(255, 166, 0, 0.452);
 }
-#mobile_bottom_nav div.active p{
+#mobile_bottom_nav div.active p {
   color: skyblue !important;
 }
-#mobile_bottom_nav div.active i{
+#mobile_bottom_nav div.active i {
   color: turquoise !important;
 }
-#appointments_list_container{
+#appointments_list_container {
   padding-top: 80px;
   min-height: 500px;
   background-color: #212c2c;
 }
-#user_account_page{
+#user_account_page {
   padding-top: 100px;
   min-height: 500px;
   background-color: #212c2c;
 }
-.user-account-page-main-container{
+.user-account-page-main-container {
   display: flex;
   flex-direction: row !important;
   justify-content: space-between;
   max-width: 1300px;
   margin: auto;
 }
-.user-account-page-main-sections-each{
+.user-account-page-main-sections-each {
   width: calc(50% - 2px);
 }
-#hero_section_svg_bg{
+#hero_section_svg_bg {
   z-index: 0;
   opacity: 0.1;
-  background-image: url('./images/CalendarBg.svg');
+  background-image: url("./images/CalendarBg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 340px;
@@ -570,6 +572,60 @@ footer {
   top: 100px;
   right: 70px;
   transform: rotate(25deg);
+}
+.booking_workflow_steps_indicator {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 15px 0;
+}
+.booking_workflow_steps_each_indicator {
+  border-bottom: 4px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.booking_workflow_steps_each_indicator_number {
+  border-radius: 100%;
+  font-weight: bolder;
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  background-color: rgb(95, 0, 95);
+  color: white;
+}
+.booking_workflow_steps_each_indicator .active{
+  transition: all 0.5s;
+  border: 4px solid orange;
+  color: orange;
+}
+.booking_workflow_steps_indicator .active {
+  transition: all 0.5s;
+  border-bottom: 4px solid orange;
+}
+.workflow_last_step_number{
+  border-radius: 100%;
+  font-weight: bolder;
+  width: 30px;
+  height: 30px;
+  border: 4px solid rgba(255,255,255,0.4);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  background-color: rgb(95,95,0);
+  color: white;
 }
 @media only screen and (max-width: 700px) {
   body {
@@ -581,7 +637,7 @@ footer {
   .header-menu-new-button {
     display: none;
   }
-  #hero_section_svg_bg{
+  #hero_section_svg_bg {
     width: 100vw;
     right: 20px;
   }
@@ -658,7 +714,7 @@ footer {
   .search-filters-include-services {
     display: block;
   }
-  #search-filter-by-services-list{
+  #search-filter-by-services-list {
     height: calc(100vh - 142px);
     border-radius: 0;
   }
@@ -706,10 +762,10 @@ footer {
     height: 120px;
     width: calc(33.3% - 3px);
   }
-  .user-account-page-main-container{
+  .user-account-page-main-container {
     display: block;
   }
-  .user-account-page-main-sections-each{
+  .user-account-page-main-sections-each {
     width: 100%;
   }
   .footer-items-container {
