@@ -13,11 +13,13 @@ import UserAccountContainer from './components/userAccountPage';
 import NotificationsContainer from './components/notificationsContainer';
 import AppSettingsPage from './components/appSettingsPage';
 import EditUserProfile from './components/editProfile';
+import FullScreenLoader from './components/fullScreenLoader';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <FullScreenLoader />
         <EditUserProfile />
         <AppSettingsPage />
         <AllServicesMenu />

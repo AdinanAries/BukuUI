@@ -779,3 +779,36 @@ footer {
     display: block;
   }
 }
+
+.loading-3 .loading {
+  background: transparent;
+  width: 2em;
+  height: 2em;
+  position: relative;
+  margin: 0 auto;
+}
+.loading-3 .loading:after {
+  display: block;
+  content: "";
+  border-radius: 50%;
+  height: 2px;
+  width: 2px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 10px 0 0 2px orange, 7px 7px 0 2px grey, 0 10px 0 2px grey, -7px 7px 0 2px grey, -10px 0 0 2px grey, -7px -7px 0 2px grey, 0 -10px 0 2px orange, 7px -7px 0 2px orange;
+  -webkit-animation: rotate 0.7s steps(8) infinite;
+  -o-animation: rotate 0.7s steps(8) infinite;
+  animation: rotate 0.7s steps(8) infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
