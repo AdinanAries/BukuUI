@@ -43,10 +43,10 @@ function UserAccountContainer(){
                             </div>
                             <div style={{background: "white", padding: 10, borderRadius: 10, boxShadow: "1px 2px 3px rgba(0,0,0,0.5)", marginBottom: 10}}>
                                 <p style={{paddingBottom: 10, borderBottom: "1px solid rgba(0,0,0,0.2)", fontSize: 14, fontWeight: "bolder"}}>
-                                    <i style={{marginRight: 5, color: "green"}} className="fa fa-user"></i>Mobile</p>
+                                    <i style={{marginRight: 5, fontSize: 18, color: "green"}} className="fa fa-mobile"></i>Mobile</p>
                                 <div style={{display: "flex", flexDirection: "row !important", justifyContent: "space-between", marginTop: 10}}>
                                     <div>
-                                        <select style={{padding: 10, width: 80, border: "none", outline: "none"}}>
+                                        <select style={{backgroundColor: "white",padding: 10, width: 80, border: "none", outline: "none"}}>
                                             <option>
                                                 +1
                                             </option>
