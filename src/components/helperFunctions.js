@@ -89,6 +89,7 @@ export function general_slideDown(elem_id){
 }
 
 export function toggle_show_login_on_user_account_page(){
+    $('html, body').animate({scrollTop:0}, '300');
     $("#user_account_page_user_info_pane").slideUp("fast");
     $("#user_account_page_login_signup_forms_pane").slideDown("fast");
     $("#user_account_page_signup_form_pane").slideUp("fast");
@@ -96,6 +97,7 @@ export function toggle_show_login_on_user_account_page(){
 }
 
 export function toggle_show_signup_on_user_account_page(){
+    $('html, body').animate({scrollTop:0}, '300');
     $("#user_account_page_user_info_pane").slideUp("fast");
     $("#user_account_page_login_signup_forms_pane").slideDown("fast");
     $("#user_account_page_login_form_pane").slideUp("fast");
@@ -103,6 +105,7 @@ export function toggle_show_signup_on_user_account_page(){
 }
 
 export function toggle_show_user_infor_pane_on_user_account_page(){
+    $('html, body').animate({scrollTop:0}, '300');
     $("#user_account_page_login_signup_forms_pane").slideUp("fast");
     $("#user_account_page_user_info_pane").slideDown("fast");
 }
