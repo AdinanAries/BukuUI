@@ -1,6 +1,6 @@
 import profilePic from "../images/profile_avatar.png"
 
-import { general_slideUp, general_slideDown, toggle_show_app_settings_page, toggle_show_edit_user_profile_page } from "./helperFunctions";
+import { general_slideUp, general_slideDown, toggle_show_app_settings_page, toggle_show_edit_user_profile_page, toggle_show_login_on_user_account_page, toggle_show_signup_on_user_account_page, toggle_show_user_infor_pane_on_user_account_page } from "./helperFunctions";
 import { login } from "../API/ajax_api_calls";
 
 console.log(login("email","password"));
@@ -9,8 +9,8 @@ function UserAccountContainer(){
     return (
         <div id="user_account_page">
             <div className="wrapper">
-                <div className="user-account-login-signup-forms-main-container">
-                    <div style={{padding: 10, paddingTop: 20}}>
+                <div id="user_account_page_login_signup_forms_pane" className="user-account-login-signup-forms-main-container">
+                    <div id="user_account_page_login_form_pane" style={{padding: 10, paddingTop: 20}}>
                         <p style={{color: "skyblue", textAlign: "center", margin: "10px 0", fontWeight: "bolder"}}>Login</p>
                         <p style={{color: "white", textAlign: "center", marginBottom: 20, fontSize: 13}}>Add your login information below</p>
                         <div style={{maxWidth: 700, margin: "auto"}}>
@@ -24,15 +24,15 @@ function UserAccountContainer(){
                                     <i style={{marginRight: 5, color: "green"}} className="fa fa-key"></i>Password</p>
                                 <input type="password" style={{width: "100%", padding: 10, fontSize: 14, border: "none"}} placeholder="please enter your password here" />
                             </div>
-                            <div style={{cursor: "pointer", padding: 10, textAlign: "center", color: "orange", backgroundColor: "rgba(255,255,0,0.1)", fontSize: 13, fontWeight: "bolder", borderRadius: 10, border: "1px solid rgba(255,255,0,0.3)"}}>
+                            <div onClick={toggle_show_user_infor_pane_on_user_account_page} style={{cursor: "pointer", padding: 10, textAlign: "center", color: "orange", backgroundColor: "rgba(255,255,0,0.1)", fontSize: 13, fontWeight: "bolder", borderRadius: 10, border: "1px solid rgba(255,255,0,0.3)"}}>
                                 Login
                             </div>
                         </div>
-                        <p style={{margin: "20px 0", color: "white", fontSize: 14, textAlign: "center", cursor: "pointer"}}>
+                        <p onClick={toggle_show_signup_on_user_account_page} style={{margin: "20px 0", color: "white", fontSize: 14, textAlign: "center", cursor: "pointer"}}>
                             Dont have an account?
                             <span style={{color: "yellow", fontSize: 14, marginLeft: 5}}>Signup here</span></p>
                     </div>
-                    <div style={{padding: 10, paddingTop: 20}}>
+                    <div id="user_account_page_signup_form_pane" style={{display: "none", padding: 10, paddingTop: 20}}>
                         <p style={{color: "skyblue", textAlign: "center", margin: "10px 0", fontWeight: "bolder"}}>Signup</p>
                         <p style={{color: "white", textAlign: "center", marginBottom: 20, fontSize: 13}}>Add your information below</p>
                         <div style={{maxWidth: 700, margin: "auto"}}>
@@ -75,17 +75,17 @@ function UserAccountContainer(){
                                     <i style={{marginRight: 5, color: "green"}} className="fa fa-key"></i>Confirm Password</p>
                                 <input type="password" style={{width: "100%", padding: 10, fontSize: 14, border: "none"}} placeholder="please confirm password here" />
                             </div>
-                            <div style={{cursor: "pointer", padding: 10, textAlign: "center", color: "orange", backgroundColor: "rgba(255,255,0,0.1)", fontSize: 13, fontWeight: "bolder", borderRadius: 10, border: "1px solid rgba(255,255,0,0.3)"}}>
+                            <div onClick={toggle_show_user_infor_pane_on_user_account_page} style={{cursor: "pointer", padding: 10, textAlign: "center", color: "orange", backgroundColor: "rgba(255,255,0,0.1)", fontSize: 13, fontWeight: "bolder", borderRadius: 10, border: "1px solid rgba(255,255,0,0.3)"}}>
                                 Signup
                             </div>
                         </div>
-                        <p style={{margin: "20px 0", color: "white", fontSize: 14, textAlign: "center", cursor: "pointer"}}>
+                        <p onClick={toggle_show_login_on_user_account_page} style={{margin: "20px 0", color: "white", fontSize: 14, textAlign: "center", cursor: "pointer"}}>
                             Already have an account?
                             <span style={{color: "yellow", fontSize: 14, marginLeft: 5}}>Login here</span></p>
                     </div>
                 
                 </div>
-                <div className="user-account-page-main-container">
+                <div id="user_account_page_user_info_pane" style={{display: "none"}} className="user-account-page-main-container">
                     <div className="user-account-page-main-sections-each" >
                         <div style={{padding: 10, display: "flex", flexDirection: "row !important", justifyContent: "space-between"}}>
                             <div style={{width: 70, height: 70, overflow: "hidden", borderRadius: "100%", backgroundColor: "rgba(0,0,0,0.2)"}}>

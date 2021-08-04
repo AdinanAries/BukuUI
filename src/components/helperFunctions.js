@@ -75,6 +75,7 @@ export function setActiveNav(elem_id){
 }
 
 export function refreshPageFunc(){
+    document.getElementById("full_screen_loader").style.display = "flex";
     $('html, body').animate({scrollTop:0}, '300');
     setTimeout("location.reload(true);", 310);
 }
@@ -85,4 +86,23 @@ export function general_slideUp(elem_id){
 
 export function general_slideDown(elem_id){
     $("#"+elem_id).slideDown("fast");
+}
+
+export function toggle_show_login_on_user_account_page(){
+    $("#user_account_page_user_info_pane").slideUp("fast");
+    $("#user_account_page_login_signup_forms_pane").slideDown("fast");
+    $("#user_account_page_signup_form_pane").slideUp("fast");
+    $("#user_account_page_login_form_pane").slideDown("fast");
+}
+
+export function toggle_show_signup_on_user_account_page(){
+    $("#user_account_page_user_info_pane").slideUp("fast");
+    $("#user_account_page_login_signup_forms_pane").slideDown("fast");
+    $("#user_account_page_login_form_pane").slideUp("fast");
+    $("#user_account_page_signup_form_pane").slideDown("fast");
+}
+
+export function toggle_show_user_infor_pane_on_user_account_page(){
+    $("#user_account_page_login_signup_forms_pane").slideUp("fast");
+    $("#user_account_page_user_info_pane").slideDown("fast");
 }
