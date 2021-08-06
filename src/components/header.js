@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 import HeaderSearchBox from "./headerSearchBox";
 import SearchFilters from './searchFilters';
 
-import {toggle_show_all_service, hide_all_popups, toggle_show_notifications_container, refreshPageFunc} from "./helperFunctions";
+import {toggle_show_all_service, hide_all_popups, toggle_show_notifications_container, toggle_show_news_upates_page, refreshPageFunc, hide_all_popups_inner_func} from "./helperFunctions";
 
+function search_without_filter(){
+    hide_all_popups_inner_func();
+}
 
 function Header(){
     return (
@@ -38,7 +41,7 @@ function Header(){
                         </li>
                     </ul>
                 </div>
-                <div className="each-header-section header-menu-new-button" style={{paddingTop: 5}}>
+                <div onClick={toggle_show_news_upates_page} className="each-header-section header-menu-new-button" style={{paddingTop: 5, cursor: "pointer"}}>
                     <div style={{display: "flex", flexDirection: "column"}}>
                         <p><i style={{fontSize: "22px", color: "aqua"}} className="fa fa-newspaper-o"></i></p>
                         <p style={{fontSize: "11px", color: "white"}}>News</p>

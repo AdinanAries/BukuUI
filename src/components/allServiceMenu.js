@@ -7,6 +7,12 @@ import spaIcon from "../images/SpaIcon1.svg";
 import spaIcon2 from "../images/SpaIcon2.svg";
 import DentistIcon from "../images/DentistIcon2.svg";
 import DentistIcon2 from "../images/DentistIcon1.svg";
+import beautyIcon from "../images/beautyIcon.svg";
+import beautyIcon2 from "../images/beautyIcon2.svg";
+import nailSalonIcon from "../images/nailSalonIcon.svg";
+import hairSalonIcon from "../images/hairSalonIcon.svg";
+import tattooShopIcon from "../images/tattooShopIcon.svg";
+import poidatryIcon from "../images/poidatryIcon.svg";
 
 ///
 function toggle_show_all_service(){
@@ -51,7 +57,17 @@ function AllServicesMenu(){
                 <div className="all_service_each_category_item">
                     <div style={{display: "flex", flexDirection: "column", justifyContent: "center", height: "100%", padding: 10, position: "relative"}}>
                         <p style={{color: "white", textAlign: "center", fontSize: 14, marginTop: 10, fontWeight: "bolder"}}>
-                            Barber Shop
+                            Tattoo Shop
+                        </p>
+                        <div style={{backgroundImage: "url("+tattooShopIcon+")", width: 60, height: 60, marginLeft: -25, margin: "auto", transform: "rotate(33deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
+                        </div>
+                        <div style={{zIndex: -1, position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "5px solid rgba(244,244,244,0.2)", borderRadius: 4, borderTopRightRadius: "30px", borderBottomRightRadius: "50%", borderTopLeftRadius: "100%", backgroundColor: "rgba(244,0,222,0.3)"}}></div>
+                    </div>
+                </div>
+                <div className="all_service_each_category_item">
+                    <div style={{display: "flex", flexDirection: "column", justifyContent: "center", height: "100%", padding: 10, position: "relative"}}>
+                        <p style={{color: "white", textAlign: "center", fontSize: 14, marginTop: 10, fontWeight: "bolder"}}>
+                            Piercing
                         </p>
                         <div style={{display: "flex", flexDirection: "row !important", justifyContent: "center"}}>
                             <div style={{backgroundImage: "url("+barbIcon+")", width: 60, height: 60, marginLeft: -25, marginTop: -10, transform: "rotate(55deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
@@ -65,21 +81,7 @@ function AllServicesMenu(){
                 <div className="all_service_each_category_item">
                     <div style={{display: "flex", flexDirection: "column", justifyContent: "center", height: "100%", padding: 10, position: "relative"}}>
                         <p style={{color: "white", textAlign: "center", fontSize: 14, marginTop: 10, fontWeight: "bolder"}}>
-                            Barber Shop
-                        </p>
-                        <div style={{display: "flex", flexDirection: "row !important", justifyContent: "center"}}>
-                            <div style={{backgroundImage: "url("+barbIcon+")", width: 60, height: 60, marginLeft: -25, marginTop: -10, transform: "rotate(55deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
-                            </div>
-                            <div style={{backgroundImage: "url("+barbIcon2+")", width: 60, height: 60, marginLeft: -25, marginTop: 10, transform: "rotate(20deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
-                            </div>
-                        </div>
-                        <div style={{zIndex: -1, position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "5px solid rgba(244,244,244,0.2)", borderRadius: 4, borderTopRightRadius: "30px", borderBottomRightRadius: "50%", borderTopLeftRadius: "100%", backgroundColor: "rgba(244,0,222,0.3)"}}></div>
-                    </div>
-                </div>
-                <div className="all_service_each_category_item">
-                    <div style={{display: "flex", flexDirection: "column", justifyContent: "center", height: "100%", padding: 10, position: "relative"}}>
-                        <p style={{color: "white", textAlign: "center", fontSize: 14, marginTop: 10, fontWeight: "bolder"}}>
-                            Barber Shop
+                            Physical Therapy
                         </p>
                         <div style={{display: "flex", flexDirection: "row !important", justifyContent: "center"}}>
                             <div style={{backgroundImage: "url("+barbIcon+")", width: 60, height: 60, marginLeft: -25, marginTop: -10, transform: "rotate(55deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
@@ -95,11 +97,7 @@ function AllServicesMenu(){
                         <p style={{color: "white", textAlign: "center", fontSize: 14, marginTop: 10, fontWeight: "bolder"}}>
                             Podiatry
                         </p>
-                        <div style={{display: "flex", flexDirection: "row !important", justifyContent: "center"}}>
-                            <div style={{backgroundImage: "url("+barbIcon+")", width: 60, height: 60, marginLeft: -25, marginTop: -10, transform: "rotate(55deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
-                            </div>
-                            <div style={{backgroundImage: "url("+barbIcon2+")", width: 60, height: 60, marginLeft: -25, marginTop: 10, transform: "rotate(20deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
-                            </div>
+                        <div style={{backgroundImage: "url("+poidatryIcon+")", width: 60, height: 60, marginLeft: -25, margin: "auto", transform: "rotate(55deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
                         </div>
                         <div style={{zIndex: -1, position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "5px solid rgba(244,244,244,0.2)", borderRadius: 4, borderTopRightRadius: "30px", borderBottomRightRadius: "50%", borderTopLeftRadius: "100%", backgroundColor: "rgba(244,0,222,0.3)"}}></div>
                     </div>
@@ -124,9 +122,9 @@ function AllServicesMenu(){
                             Beauty Salon
                         </p>
                         <div style={{display: "flex", flexDirection: "row !important", justifyContent: "center"}}>
-                            <div style={{backgroundImage: "url("+barbIcon+")", width: 60, height: 60, marginLeft: -25, marginTop: -10, transform: "rotate(55deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
+                            <div style={{backgroundImage: "url("+beautyIcon+")", width: 60, height: 60, marginLeft: -25, marginTop: -5, transform: "rotate(55deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
                             </div>
-                            <div style={{backgroundImage: "url("+barbIcon2+")", width: 60, height: 60, marginLeft: -25, marginTop: 10, transform: "rotate(20deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
+                            <div style={{backgroundImage: "url("+beautyIcon2+")", width: 60, height: 60, marginLeft: -15, marginTop: 10, transform: "rotate(20deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
                             </div>
                         </div>
                         <div style={{zIndex: -1, position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "5px solid rgba(244,244,244,0.2)", borderRadius: 4, borderTopRightRadius: "30px", borderBottomRightRadius: "50%", borderTopLeftRadius: "100%", backgroundColor: "rgba(244,0,222,0.3)"}}></div>
@@ -179,11 +177,7 @@ function AllServicesMenu(){
                         <p style={{color: "white", textAlign: "center", fontSize: 14, marginTop: 10, fontWeight: "bolder"}}>
                             Nail Salon
                         </p>
-                        <div style={{display: "flex", flexDirection: "row !important", justifyContent: "center"}}>
-                            <div style={{backgroundImage: "url("+barbIcon+")", width: 60, height: 60, marginLeft: -25, marginTop: -10, transform: "rotate(55deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
-                            </div>
-                            <div style={{backgroundImage: "url("+barbIcon2+")", width: 60, height: 60, marginLeft: -25, marginTop: 10, transform: "rotate(20deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
-                            </div>
+                        <div style={{backgroundImage: "url("+nailSalonIcon+")", width: 60, height: 60, margin: "auto", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
                         </div>
                         <div style={{zIndex: -1, position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "5px solid rgba(244,244,244,0.2)", borderRadius: 4, borderTopRightRadius: "30px", borderBottomRightRadius: "50%", borderTopLeftRadius: "100%", backgroundColor: "rgba(244,0,222,0.3)"}}></div>
                     </div>
@@ -193,11 +187,7 @@ function AllServicesMenu(){
                         <p style={{color: "white", textAlign: "center", fontSize: 14, marginTop: 10, fontWeight: "bolder"}}>
                             Hair Salon
                         </p>
-                        <div style={{display: "flex", flexDirection: "row !important", justifyContent: "center"}}>
-                            <div style={{backgroundImage: "url("+barbIcon+")", width: 60, height: 60, marginLeft: -25, marginTop: -10, transform: "rotate(55deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
-                            </div>
-                            <div style={{backgroundImage: "url("+barbIcon2+")", width: 60, height: 60, marginLeft: -25, marginTop: 10, transform: "rotate(20deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
-                            </div>
+                        <div style={{backgroundImage: "url("+hairSalonIcon+")", width: 60, height: 60, marginLeft: -25, margin: "auto", transform: "rotate(55deg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
                         </div>
                         <div style={{zIndex: -1, position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "5px solid rgba(244,244,244,0.2)", borderRadius: 4, borderTopRightRadius: "30px", borderBottomRightRadius: "50%", borderTopLeftRadius: "100%", backgroundColor: "rgba(244,0,222,0.3)"}}></div>
                     </div>

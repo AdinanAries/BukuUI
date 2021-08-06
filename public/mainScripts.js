@@ -11,7 +11,9 @@ $(window).scroll(function() {
         }else if(document.getElementById("app_settings_page").style.display != "none"){
             // do not hide filters
         }else if(document.getElementById("edit_user_profile_page").style.display != "none"){
-            // do not hide filters 
+            // do not hide filters
+        }else if(document.getElementById("news_updates_page").style.display != "none"){
+            // do not hide filters
         }else{
             $("#search_filters_main_container").slideUp("fast");
         }

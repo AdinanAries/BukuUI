@@ -14,11 +14,13 @@ import NotificationsContainer from './components/notificationsContainer';
 import AppSettingsPage from './components/appSettingsPage';
 import EditUserProfile from './components/editProfile';
 import FullScreenLoader from './components/fullScreenLoader';
+import NewsUpdatesPage from './components/newsUpdates';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <NewsUpdatesPage />
         <FullScreenLoader />
         <EditUserProfile />
         <AppSettingsPage />

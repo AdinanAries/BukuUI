@@ -1,14 +1,34 @@
 import profilePic from "../images/profile_avatar.png"
 
+import AddReviewForm from "./addReviewForm";
+
 import { general_slideUp, general_slideDown, toggle_show_app_settings_page, toggle_show_edit_user_profile_page, toggle_show_login_on_user_account_page, toggle_show_signup_on_user_account_page, toggle_show_user_infor_pane_on_user_account_page } from "./helperFunctions";
 import { login } from "../API/ajax_api_calls";
 
-console.log(login("email","password"));
+/*{
+  "email": "kk@live.com",
+  "password": "1111111"
+}*/
+async function run_login(){
+    let res = await login("kk@live.com","1111111");
+    console.log(res);
+}
+
+run_login();
 
 function UserAccountContainer(){
     return (
         <div id="user_account_page">
             <div className="wrapper">
+                <div id="usracc_add_business_addreview_form_1" style={{display: "none", position: "fixed", top: 100, left: 0,zIndex: 2, padding: 5, height: "100vh", width: "100vw", backgroundColor: "rgba(0,0,0,0.4)"}}>
+                    <div style={{maxWidth: 700, margin: "auto", padding: 5, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
+                            <p onClick={()=>{general_slideUp("usracc_add_business_addreview_form_1")}} style={{marginBottom: 15, textAlign: "right", fontSize: 14, color: "red", cursor: "pointer"}}>
+                                Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-down"></i>
+                            </p>
+                            <p style={{color: "skyblue", fontSize: 13, textAlign: "center", marginBottom: 10}}>Tell us your experience</p>
+                            <AddReviewForm />
+                    </div>
+                </div>
                 <div id="user_account_page_login_signup_forms_pane" className="user-account-login-signup-forms-main-container">
                     <div id="user_account_page_login_form_pane" style={{padding: 10, paddingTop: 20}}>
                         <p style={{color: "skyblue", textAlign: "center", margin: "10px 0", fontWeight: "bolder"}}>Login</p>
@@ -237,8 +257,8 @@ function UserAccountContainer(){
                                             +1 (732) 799 9546</p>
                                     </div>
                                 </div>
-                                <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between"}}>
-                                    <div style={{width: "66.5%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(145,12,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between", position: "relative"}}>
+                                    <div onClick={()=>{general_slideDown("usracc_add_business_addreview_form_1")}} style={{width: "66.5%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(145,12,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
                                         <i style={{marginRight: 5, color: "gold"}} className="fa fa-star"></i>
                                         Add Review
                                     </div>
@@ -297,8 +317,8 @@ function UserAccountContainer(){
                                             +1 (732) 799 9546</p>
                                     </div>
                                 </div>
-                                <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between"}}>
-                                    <div style={{width: "66.5%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(145,12,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                <div style={{position: "relative", display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between"}}>
+                                    <div onClick={()=>{general_slideDown("usracc_add_business_addreview_form_2")}} style={{width: "66.5%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(145,12,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
                                         <i style={{marginRight: 5, color: "gold"}} className="fa fa-star"></i>
                                         Add Review
                                     </div>
@@ -321,6 +341,13 @@ function UserAccountContainer(){
                                                 <i style={{marginRight: 5, color: "gold"}} className="fa fa-eye"></i>
                                                 View Profile</p>
                                         </div>
+                                    </div>
+                                    <div id="usracc_add_business_addreview_form_2" style={{display: "none", position: "absolute", bottom: -1, left: -1, width: "100%", padding: 10, backgroundColor: "#212c2c", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "1px 2px 3px rgba(0,0,0,0.4)", borderRadius: 4}}>
+                                            <p onClick={()=>{general_slideUp("usracc_add_business_addreview_form_2")}} style={{marginBottom: 15, textAlign: "right", fontSize: 14, color: "red", cursor: "pointer"}}>
+                                                Hide<i style={{color: "orange", marginLeft: 7, fontSize: 17}} className="fa fa-caret-down"></i>
+                                            </p>
+                                            <p style={{color: "skyblue", fontSize: 13, textAlign: "center", marginBottom: 10}}>Tell us your experience</p>
+                                            <AddReviewForm />
                                     </div>
                                 </div>
                             </div>
