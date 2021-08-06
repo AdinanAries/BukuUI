@@ -14,6 +14,8 @@ $(window).scroll(function() {
             // do not hide filters
         }else if(document.getElementById("news_updates_page").style.display != "none"){
             // do not hide filters
+        }else if(document.getElementById("add_business_addreview_page").style.display != "none"){
+            // do not hide filters
         }else{
             $("#search_filters_main_container").slideUp("fast");
         }

@@ -22,7 +22,7 @@ function AddReviewForm(){
             </div>
             <p style={{fontSize: 14, color: "yellow", fontWeight: "bolder", marginBottom: 10}}>
                 Review</p>
-            <textarea style={{minHeight: 40, fontSize: 14, width: "100%", borderRadius: 10, padding: 10, border: "1px solid rgb(244,244,111)", backgroundColor: "rgb(244,244,111)", outline: "none"}}>
+            <textarea style={{minHeight: 120, fontSize: 14, width: "100%", borderRadius: 10, padding: 10, border: "1px solid rgb(244,244,111)", backgroundColor: "rgb(244,244,111)", outline: "none"}}>
                 type your review here...
             </textarea>
             <div style={{cursor: "pointer", marginTop: 5, borderRadius: 10, backgroundColor: "darkslateblue", color: "white", textAlign: "center", padding: 10, fontSize: 14}}>

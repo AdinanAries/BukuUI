@@ -15,11 +15,13 @@ import AppSettingsPage from './components/appSettingsPage';
 import EditUserProfile from './components/editProfile';
 import FullScreenLoader from './components/fullScreenLoader';
 import NewsUpdatesPage from './components/newsUpdates';
+import AddReviewsPage from './components/addReviewsPage';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <AddReviewsPage />
         <NewsUpdatesPage />
         <FullScreenLoader />
         <EditUserProfile />
