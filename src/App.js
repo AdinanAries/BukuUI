@@ -16,17 +16,22 @@ import EditUserProfile from './components/editProfile';
 import FullScreenLoader from './components/fullScreenLoader';
 import NewsUpdatesPage from './components/newsUpdates';
 import AddReviewsPage from './components/addReviewsPage';
+import AllAppointmentHistory from './components/allAppointmentHistory';
+import PhotoUploadForm, { DeletePhotoConfirmationDialog } from "./components/photoUploadForm";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <DeletePhotoConfirmationDialog />
+        <PhotoUploadForm />
         <AddReviewsPage />
         <NewsUpdatesPage />
         <FullScreenLoader />
         <EditUserProfile />
         <AppSettingsPage />
         <AllServicesMenu />
+        <AllAppointmentHistory />
         <NotificationsContainer />
         <RegisterBusinessAllInputs />
         <Header />

@@ -1,12 +1,7 @@
-import profilePic from "../images/profile_avatar.png"
+import profilePic from "../images/profile_avatar.png";
 
-import { general_slideUp, general_slideDown, toggle_show_app_settings_page, toggle_show_edit_user_profile_page, toggle_show_login_on_user_account_page, toggle_show_signup_on_user_account_page, toggle_show_user_infor_pane_on_user_account_page } from "./helperFunctions";
+import { general_slideUp, general_slideDown, show_add_business_addreview_page, toggle_show_history_page, toggle_show_app_settings_page, toggle_show_edit_user_profile_page, toggle_show_login_on_user_account_page, toggle_show_signup_on_user_account_page, toggle_show_user_infor_pane_on_user_account_page } from "./helperFunctions";
 import { login } from "../API/ajax_api_calls";
-
-function show_add_business_addreview_page(){
-    document.getElementById("search_filters_main_container").style.display = "block";
-    general_slideDown("add_business_addreview_page");
-}
 
 /*{
   "email": "kk@live.com",
@@ -339,7 +334,8 @@ function UserAccountContainer(){
                                 </div>
                             </div>
                         </div>
-                        <div style={{marginTop: 10, backgroundColor: "rgba(22,22,98,0.3)", border: "1px solid rgba(55,155,73,0.3)", padding: 10, textAlign: "center", color: "white", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                        
+                        <div onClick={toggle_show_history_page} style={{marginTop: 10, backgroundColor: "rgba(22,22,98,0.3)", border: "1px solid rgba(55,155,73,0.3)", padding: 10, textAlign: "center", color: "white", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
                             see all history
                         </div>
                     </div>

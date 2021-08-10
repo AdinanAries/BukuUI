@@ -502,7 +502,9 @@ footer {
 #notifications_container,
 #app_settings_page,
 #edit_user_profile_page,
-#news_updates_page {
+#news_updates_page,
+#all_appointment_history,
+#photo_upload_form {
   position: fixed;
   background-color: #212c2c;
   z-index: 4;

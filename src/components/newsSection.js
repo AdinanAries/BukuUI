@@ -1,4 +1,4 @@
-import rvwImg from "../images/ProfilePic9.jpg"
+import rvwImg from "../images/ProfilePic9.jpg";
 
 function NewsSection(){
     return (
